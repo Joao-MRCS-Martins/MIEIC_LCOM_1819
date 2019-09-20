@@ -1,0 +1,17 @@
+\hypertarget{bitmap_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/bitmap.c File Reference}
+\label{bitmap_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/bitmap.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/bitmap.\+c}}
+{\ttfamily \#include \char`\"{}lcom/lcf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/pixmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}videog.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__bitmap_ga3506880ffd407c36eb8aaddd2c1606d2}{load\+Bitmap}} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Loads a bmp image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bitmap_ga6652acd82369d03df807a689437efc1b}{draw\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp, int x, int y, \mbox{\hyperlink{group__bitmap_gacdfaca60ec19c0265bac2692d7982726}{Alignment}} alignment)
+\begin{DoxyCompactList}\small\item\em Draws an unscaled, unrotated bitmap at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bitmap_ga08c1d4f4fff81df260d979ea8fc1aa61}{delete\+Bitmap}} (\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$bmp)
+\begin{DoxyCompactList}\small\item\em Destroys the given bitmap, freeing all resources used by it. \end{DoxyCompactList}\end{DoxyCompactItemize}

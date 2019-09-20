@@ -1,0 +1,21 @@
+\hypertarget{mouse_8h}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/mouse.h File Reference}
+\label{mouse_8h}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/mouse.\+h@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/mouse.\+h}}
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}videog.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__mouse_ga9da18257ff113b686bb826d154bfaa87}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes mouse interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga685ad2706aca36d9869a30a19b9f446a}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes mouse interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga992ee1b8a073ba102ee34e483b25c380}{write\+\_\+mouse\+\_\+cmd}} (uint32\+\_\+t mcmd)
+\begin{DoxyCompactList}\small\item\em Issues a mouse related command to the keyboard. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mouse_ga34f5d4446d7bc96bd4456ceab5d08ec9}{try\+\_\+mouse\+\_\+cmd}} (uint32\+\_\+t mcmd)
+\begin{DoxyCompactList}\small\item\em Tries to issue mouse command while its not successful or an E\+R\+R\+OR byte is received. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mouse_ga834b6d7efe311484d6da234db333cb97}{mouse\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em Mouse interrupt handler, reads mouse data from kbc. \end{DoxyCompactList}\item 
+struct mouse\+\_\+ev $\ast$ \mbox{\hyperlink{group__mouse_ga992f9c38f09f0aa71b62cba658094dbe}{mouse\+\_\+det\+\_\+evt}} (struct packet $\ast$pp)
+\begin{DoxyCompactList}\small\item\em Detects the mouse event by processing the packet passed in the parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}

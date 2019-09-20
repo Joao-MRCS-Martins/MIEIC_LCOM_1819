@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['i8042',['i8042',['../group__i8042.html',1,'']]],
+  ['i8042_2eh',['i8042.h',['../i8042_8h.html',1,'']]],
+  ['i8254',['i8254',['../group__i8254.html',1,'']]],
+  ['i8254_2eh',['i8254.h',['../i8254_8h.html',1,'']]],
+  ['ibf',['IBF',['../group__i8042.html#ga3c48b10907056351582baf9f6478598e',1,'i8042.h']]],
+  ['ih_5fbool',['ih_bool',['../credits_8c.html#a581d7c6b8c128e2d037cce52bdc168cf',1,'ih_bool():&#160;credits.c'],['../game_8c.html#a581d7c6b8c128e2d037cce52bdc168cf',1,'ih_bool():&#160;credits.c'],['../keyboard_8c.html#a581d7c6b8c128e2d037cce52bdc168cf',1,'ih_bool():&#160;keyboard.c'],['../mouse_8c.html#a581d7c6b8c128e2d037cce52bdc168cf',1,'ih_bool():&#160;credits.c']]],
+  ['image',['image',['../group__credits.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'Graphic::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'gameOver::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'tetris::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'pnt::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'scoreimg::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'lvl::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'ldig::image()'],['../group__game.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'Date_image::image()'],['../group__main__menu.html#ga801bef0ab9d72c95bc5d6d6a0d8f2db0',1,'Background::image()']]],
+  ['imagesize',['imageSize',['../group__bitmap.html#gadcd57a0168319e747bc8099218d3822c',1,'BitmapInfoHeader']]],
+  ['importantcolors',['importantColors',['../group__bitmap.html#ga8f7abfbc446b12f385d2b42c3b4fd9b0',1,'BitmapInfoHeader']]],
+  ['in_5fbuf_5farg',['IN_BUF_ARG',['../group__i8042.html#ga67a4b3af0329557ddaf60c0ee0c4d906',1,'i8042.h']]],
+  ['in_5fbuf_5fcmd',['IN_BUF_CMD',['../group__i8042.html#ga87da1954d01adc893f21e25bdfd48630',1,'i8042.h']]],
+  ['index',['INDEX',['../group__videog.html#gac6885dbfb371c33e523c7fb046118b36',1,'videog.h']]],
+  ['ipc_5fstatus',['ipc_status',['../credits_8c.html#ab9f863ebaa3805a6e366e055cd35626a',1,'ipc_status():&#160;game.c'],['../game_8c.html#ab9f863ebaa3805a6e366e055cd35626a',1,'ipc_status():&#160;game.c']]],
+  ['irq_5fset_5fkey',['irq_set_key',['../credits_8c.html#a97412d869ceb53b4677d30395bc57eac',1,'irq_set_key():&#160;credits.c'],['../game_8c.html#a97412d869ceb53b4677d30395bc57eac',1,'irq_set_key():&#160;game.c']]],
+  ['irq_5fset_5frtc',['irq_set_rtc',['../game_8c.html#a0f7ecc47ac40b06d401be059c9ce5711',1,'game.c']]],
+  ['irq_5fset_5ftim',['irq_set_tim',['../game_8c.html#a2689ae0fca38ea3503bba4d3836f3c05',1,'game.c']]],
+  ['irqf',['IRQF',['../group__rtc.html#ga8565773f11252b9d615f1b12ac73032d',1,'rtc.h']]],
+  ['issue_5fby2mouse',['ISSUE_BY2MOUSE',['../group__i8042.html#gaa0b21fb358640f27c94090e845b497ae',1,'i8042.h']]],
+  ['issue_5fcmd_5fb',['ISSUE_CMD_B',['../group__i8042.html#ga7e8f90e986320fbd1d6f22b71d967528',1,'i8042.h']]]
+];

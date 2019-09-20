@@ -1,0 +1,18 @@
+\hypertarget{kbc_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.c File Reference}
+\label{kbc_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.\+c}}
+{\ttfamily \#include \char`\"{}lcom/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__kbc_ga77e47edd0806a3ac022baa8431f1f8b8}{read\+\_\+kbc}} (uint32\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, int port)
+\begin{DoxyCompactList}\small\item\em Tries to read information from the kbc status register. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga51a87bc28290c19518e8bbd5423f508a}{read\+\_\+information}} (uint8\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, uint8\+\_\+t I\+RQ)
+\begin{DoxyCompactList}\small\item\em Reads information of the kbc, whether its the scancode from the keyboard or a packet from the mouse. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__kbc_ga547e83b3378cd67366e45d3c9565374a}{kbc\+\_\+issue\+\_\+command}} (uint32\+\_\+t cmd, int port)
+\begin{DoxyCompactList}\small\item\em Issues a command to the kbc. \end{DoxyCompactList}\end{DoxyCompactItemize}

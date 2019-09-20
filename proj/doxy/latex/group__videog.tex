@@ -1,0 +1,432 @@
+\hypertarget{group__videog}{}\section{videog}
+\label{group__videog}\index{videog@{videog}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__videog_ga06ccfea6efec9fe0bd908d0b142a172d}{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}}(x)~((x+7)/8)
+\item 
+\#define \mbox{\hyperlink{group__videog_gac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX}}~0x105
+\item 
+\#define \mbox{\hyperlink{group__videog_ga86720ded03b3f5b5ca53d30b33cb33bb}{D\+I\+R\+E\+CT}}~0x114
+\item 
+\#define \mbox{\hyperlink{group__videog_gac0c27ee88c2ac7437b37445026083b1f}{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE}}~60
+\item 
+\#define \mbox{\hyperlink{group__videog_ga7b3b25cba33b07c303f3060fe41887f6}{B\+L\+A\+CK}}~0x0000
+\item 
+\#define \mbox{\hyperlink{group__videog_ga959d1249a76cfbd90fc6d96e2a9744e9}{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE}}~0x05\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gacfbc006ea433ad708fdee3e82996e721}{G\+R\+E\+EN}}~0x0\+F00
+\item 
+\#define \mbox{\hyperlink{group__videog_ga8d23feea868a983c8c2b661e1e16972f}{R\+ED}}~0x\+F000
+\item 
+\#define \mbox{\hyperlink{group__videog_gada419fe3b48fcf19daed7cc57ccf1174}{P\+I\+NK}}~0x\+F0\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gabf681265909adf3d3e8116c93c0ba179}{Y\+E\+L\+L\+OW}}~0x\+F\+F00
+\item 
+\#define \mbox{\hyperlink{group__videog_gadce122f566c88a1eceeb79a635afa964}{G\+R\+EY}}~0x7\+B\+EF
+\item 
+\#define \mbox{\hyperlink{group__videog_ga79d10e672abb49ad63eeaa8aaef57c38}{B\+L\+UE}}~0x00\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gac5b6e19bf06822021f35602c59658de3}{O\+R\+A\+N\+GE}}~0x\+E\+C00
+\item 
+\#define \mbox{\hyperlink{group__videog_ga87b537f5fa5c109d3c05c13d6b18f382}{W\+H\+I\+TE}}~0x\+F\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__videog_ga442a8d042167564d8248fcd57de6b837}{vg\+\_\+draw\+\_\+pixel}} (unsigned int i, uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color2)
+\begin{DoxyCompactList}\small\item\em Paints a certain pixel with a given color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_ga240fc458a4f42c9396bcc98d47f253e3}{vg\+\_\+draw\+\_\+vline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a vertical line on the screem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270}{vg\+\_\+draw\+\_\+rect\+\_\+empty}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle composed only by its borders. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_ga4d53728322f948683b768482bf4906e8}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__videog_ga8ecfc1971f8bce697d1e02ebf57e6801}{get\+\_\+v\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vertical resolution. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__videog_ga53190a84d33dca987a32592d55b0e764}{get\+\_\+h\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em Gets the horizontal resolution. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__videog_ga753e43171fab6674507b8b8042be0906}{get\+\_\+mem}} ()
+\begin{DoxyCompactList}\small\item\em Gets the video memory buffer. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__videog_gae16576a0c83561a7c462fb76956e06dc}{get\+\_\+tmp}} ()
+\begin{DoxyCompactList}\small\item\em Gets the temporary video buffer. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{group__videog_ga0a3c7d7f5ab9ad65df3f52a43354c5f7}{get\+\_\+vram\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vram size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__videog_ga0d199b5702695c4d7b78ef83759c32d5}{clean\+\_\+screen}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the video memory, setting all its content to 0x0000 (Black) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__videog_ga330b56594412c06fcf7c605709352a19}{clean\+\_\+tmp}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the temporary buffer, setting all its content to 0x0000 (Black) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the video graphics 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__videog_ga7b3b25cba33b07c303f3060fe41887f6}\label{group__videog_ga7b3b25cba33b07c303f3060fe41887f6}} 
+\index{videog@{videog}!B\+L\+A\+CK@{B\+L\+A\+CK}}
+\index{B\+L\+A\+CK@{B\+L\+A\+CK}!videog@{videog}}
+\subsubsection{\texorpdfstring{B\+L\+A\+CK}{BLACK}}
+{\footnotesize\ttfamily \#define B\+L\+A\+CK~0x0000}
+
+\mbox{\Hypertarget{group__videog_ga79d10e672abb49ad63eeaa8aaef57c38}\label{group__videog_ga79d10e672abb49ad63eeaa8aaef57c38}} 
+\index{videog@{videog}!B\+L\+UE@{B\+L\+UE}}
+\index{B\+L\+UE@{B\+L\+UE}!videog@{videog}}
+\subsubsection{\texorpdfstring{B\+L\+UE}{BLUE}}
+{\footnotesize\ttfamily \#define B\+L\+UE~0x00\+FF}
+
+\mbox{\Hypertarget{group__videog_ga06ccfea6efec9fe0bd908d0b142a172d}\label{group__videog_ga06ccfea6efec9fe0bd908d0b142a172d}} 
+\index{videog@{videog}!B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL@{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}}
+\index{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL@{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}!videog@{videog}}
+\subsubsection{\texorpdfstring{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}{BYTES\_PER\_PIXEL}}
+{\footnotesize\ttfamily \#define B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x+7)/8)}
+
+\mbox{\Hypertarget{group__videog_ga86720ded03b3f5b5ca53d30b33cb33bb}\label{group__videog_ga86720ded03b3f5b5ca53d30b33cb33bb}} 
+\index{videog@{videog}!D\+I\+R\+E\+CT@{D\+I\+R\+E\+CT}}
+\index{D\+I\+R\+E\+CT@{D\+I\+R\+E\+CT}!videog@{videog}}
+\subsubsection{\texorpdfstring{D\+I\+R\+E\+CT}{DIRECT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+E\+CT~0x114}
+
+\mbox{\Hypertarget{group__videog_gacfbc006ea433ad708fdee3e82996e721}\label{group__videog_gacfbc006ea433ad708fdee3e82996e721}} 
+\index{videog@{videog}!G\+R\+E\+EN@{G\+R\+E\+EN}}
+\index{G\+R\+E\+EN@{G\+R\+E\+EN}!videog@{videog}}
+\subsubsection{\texorpdfstring{G\+R\+E\+EN}{GREEN}}
+{\footnotesize\ttfamily \#define G\+R\+E\+EN~0x0\+F00}
+
+\mbox{\Hypertarget{group__videog_gadce122f566c88a1eceeb79a635afa964}\label{group__videog_gadce122f566c88a1eceeb79a635afa964}} 
+\index{videog@{videog}!G\+R\+EY@{G\+R\+EY}}
+\index{G\+R\+EY@{G\+R\+EY}!videog@{videog}}
+\subsubsection{\texorpdfstring{G\+R\+EY}{GREY}}
+{\footnotesize\ttfamily \#define G\+R\+EY~0x7\+B\+EF}
+
+\mbox{\Hypertarget{group__videog_gac6885dbfb371c33e523c7fb046118b36}\label{group__videog_gac6885dbfb371c33e523c7fb046118b36}} 
+\index{videog@{videog}!I\+N\+D\+EX@{I\+N\+D\+EX}}
+\index{I\+N\+D\+EX@{I\+N\+D\+EX}!videog@{videog}}
+\subsubsection{\texorpdfstring{I\+N\+D\+EX}{INDEX}}
+{\footnotesize\ttfamily \#define I\+N\+D\+EX~0x105}
+
+\mbox{\Hypertarget{group__videog_ga959d1249a76cfbd90fc6d96e2a9744e9}\label{group__videog_ga959d1249a76cfbd90fc6d96e2a9744e9}} 
+\index{videog@{videog}!L\+I\+G\+H\+T\+\_\+\+B\+L\+UE@{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE}}
+\index{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE@{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE}!videog@{videog}}
+\subsubsection{\texorpdfstring{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE}{LIGHT\_BLUE}}
+{\footnotesize\ttfamily \#define L\+I\+G\+H\+T\+\_\+\+B\+L\+UE~0x05\+FF}
+
+\mbox{\Hypertarget{group__videog_gac0c27ee88c2ac7437b37445026083b1f}\label{group__videog_gac0c27ee88c2ac7437b37445026083b1f}} 
+\index{videog@{videog}!M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE@{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE}}
+\index{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE@{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE}!videog@{videog}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE}{MAX\_FR\_RATE}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE~60}
+
+\mbox{\Hypertarget{group__videog_gac5b6e19bf06822021f35602c59658de3}\label{group__videog_gac5b6e19bf06822021f35602c59658de3}} 
+\index{videog@{videog}!O\+R\+A\+N\+GE@{O\+R\+A\+N\+GE}}
+\index{O\+R\+A\+N\+GE@{O\+R\+A\+N\+GE}!videog@{videog}}
+\subsubsection{\texorpdfstring{O\+R\+A\+N\+GE}{ORANGE}}
+{\footnotesize\ttfamily \#define O\+R\+A\+N\+GE~0x\+E\+C00}
+
+\mbox{\Hypertarget{group__videog_gada419fe3b48fcf19daed7cc57ccf1174}\label{group__videog_gada419fe3b48fcf19daed7cc57ccf1174}} 
+\index{videog@{videog}!P\+I\+NK@{P\+I\+NK}}
+\index{P\+I\+NK@{P\+I\+NK}!videog@{videog}}
+\subsubsection{\texorpdfstring{P\+I\+NK}{PINK}}
+{\footnotesize\ttfamily \#define P\+I\+NK~0x\+F0\+FF}
+
+\mbox{\Hypertarget{group__videog_ga8d23feea868a983c8c2b661e1e16972f}\label{group__videog_ga8d23feea868a983c8c2b661e1e16972f}} 
+\index{videog@{videog}!R\+ED@{R\+ED}}
+\index{R\+ED@{R\+ED}!videog@{videog}}
+\subsubsection{\texorpdfstring{R\+ED}{RED}}
+{\footnotesize\ttfamily \#define R\+ED~0x\+F000}
+
+\mbox{\Hypertarget{group__videog_ga87b537f5fa5c109d3c05c13d6b18f382}\label{group__videog_ga87b537f5fa5c109d3c05c13d6b18f382}} 
+\index{videog@{videog}!W\+H\+I\+TE@{W\+H\+I\+TE}}
+\index{W\+H\+I\+TE@{W\+H\+I\+TE}!videog@{videog}}
+\subsubsection{\texorpdfstring{W\+H\+I\+TE}{WHITE}}
+{\footnotesize\ttfamily \#define W\+H\+I\+TE~0x\+F\+F\+FF}
+
+\mbox{\Hypertarget{group__videog_gabf681265909adf3d3e8116c93c0ba179}\label{group__videog_gabf681265909adf3d3e8116c93c0ba179}} 
+\index{videog@{videog}!Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}}
+\index{Y\+E\+L\+L\+OW@{Y\+E\+L\+L\+OW}!videog@{videog}}
+\subsubsection{\texorpdfstring{Y\+E\+L\+L\+OW}{YELLOW}}
+{\footnotesize\ttfamily \#define Y\+E\+L\+L\+OW~0x\+F\+F00}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__videog_ga0d199b5702695c4d7b78ef83759c32d5}\label{group__videog_ga0d199b5702695c4d7b78ef83759c32d5}} 
+\index{videog@{videog}!clean\+\_\+screen@{clean\+\_\+screen}}
+\index{clean\+\_\+screen@{clean\+\_\+screen}!videog@{videog}}
+\subsubsection{\texorpdfstring{clean\+\_\+screen()}{clean\_screen()}}
+{\footnotesize\ttfamily void clean\+\_\+screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans the video memory, setting all its content to 0x0000 (Black) 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga0d199b5702695c4d7b78ef83759c32d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga330b56594412c06fcf7c605709352a19}\label{group__videog_ga330b56594412c06fcf7c605709352a19}} 
+\index{videog@{videog}!clean\+\_\+tmp@{clean\+\_\+tmp}}
+\index{clean\+\_\+tmp@{clean\+\_\+tmp}!videog@{videog}}
+\subsubsection{\texorpdfstring{clean\+\_\+tmp()}{clean\_tmp()}}
+{\footnotesize\ttfamily void clean\+\_\+tmp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans the temporary buffer, setting all its content to 0x0000 (Black) 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga330b56594412c06fcf7c605709352a19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga53190a84d33dca987a32592d55b0e764}\label{group__videog_ga53190a84d33dca987a32592d55b0e764}} 
+\index{videog@{videog}!get\+\_\+h\+\_\+res@{get\+\_\+h\+\_\+res}}
+\index{get\+\_\+h\+\_\+res@{get\+\_\+h\+\_\+res}!videog@{videog}}
+\subsubsection{\texorpdfstring{get\+\_\+h\+\_\+res()}{get\_h\_res()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+h\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the horizontal resolution. 
+
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t -\/ Returns the horizontal resolution of the video graphics set 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga53190a84d33dca987a32592d55b0e764_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga753e43171fab6674507b8b8042be0906}\label{group__videog_ga753e43171fab6674507b8b8042be0906}} 
+\index{videog@{videog}!get\+\_\+mem@{get\+\_\+mem}}
+\index{get\+\_\+mem@{get\+\_\+mem}!videog@{videog}}
+\subsubsection{\texorpdfstring{get\+\_\+mem()}{get\_mem()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+mem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the video memory buffer. 
+
+\begin{DoxyReturn}{Returns}
+char$\ast$ -\/ Returns a pointer to the video memory 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga753e43171fab6674507b8b8042be0906_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_gae16576a0c83561a7c462fb76956e06dc}\label{group__videog_gae16576a0c83561a7c462fb76956e06dc}} 
+\index{videog@{videog}!get\+\_\+tmp@{get\+\_\+tmp}}
+\index{get\+\_\+tmp@{get\+\_\+tmp}!videog@{videog}}
+\subsubsection{\texorpdfstring{get\+\_\+tmp()}{get\_tmp()}}
+{\footnotesize\ttfamily char$\ast$ get\+\_\+tmp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the temporary video buffer. 
+
+\begin{DoxyReturn}{Returns}
+char$\ast$ -\/ Returns a pointer to the temporary buffer 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_gae16576a0c83561a7c462fb76956e06dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga8ecfc1971f8bce697d1e02ebf57e6801}\label{group__videog_ga8ecfc1971f8bce697d1e02ebf57e6801}} 
+\index{videog@{videog}!get\+\_\+v\+\_\+res@{get\+\_\+v\+\_\+res}}
+\index{get\+\_\+v\+\_\+res@{get\+\_\+v\+\_\+res}!videog@{videog}}
+\subsubsection{\texorpdfstring{get\+\_\+v\+\_\+res()}{get\_v\_res()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+v\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the vertical resolution. 
+
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t -\/ Returns the vertical resolution of the video graphics set 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga8ecfc1971f8bce697d1e02ebf57e6801_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga0a3c7d7f5ab9ad65df3f52a43354c5f7}\label{group__videog_ga0a3c7d7f5ab9ad65df3f52a43354c5f7}} 
+\index{videog@{videog}!get\+\_\+vram\+\_\+size@{get\+\_\+vram\+\_\+size}}
+\index{get\+\_\+vram\+\_\+size@{get\+\_\+vram\+\_\+size}!videog@{videog}}
+\subsubsection{\texorpdfstring{get\+\_\+vram\+\_\+size()}{get\_vram\_size()}}
+{\footnotesize\ttfamily unsigned get\+\_\+vram\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the vram size. 
+
+\begin{DoxyReturn}{Returns}
+unsigned -\/ Returns the vram size 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga0a3c7d7f5ab9ad65df3f52a43354c5f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga442a8d042167564d8248fcd57de6b837}\label{group__videog_ga442a8d042167564d8248fcd57de6b837}} 
+\index{videog@{videog}!vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}}
+\index{vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}!videog@{videog}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{unsigned int}]{i,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color2 }\end{DoxyParamCaption})}
+
+
+
+Paints a certain pixel with a given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & -\/ Ratio of bits/pixel \\
+\hline
+{\em x} & -\/ Coordinate x of pixel \\
+\hline
+{\em y} & -\/ Coordinate y of pixel \\
+\hline
+{\em color2} & -\/ Color to paint the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270}\label{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270}} 
+\index{videog@{videog}!vg\+\_\+draw\+\_\+rect\+\_\+empty@{vg\+\_\+draw\+\_\+rect\+\_\+empty}}
+\index{vg\+\_\+draw\+\_\+rect\+\_\+empty@{vg\+\_\+draw\+\_\+rect\+\_\+empty}!videog@{videog}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rect\+\_\+empty()}{vg\_draw\_rect\_empty()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+rect\+\_\+empty (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle composed only by its borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ Coordinate x of the rectangle \\
+\hline
+{\em y} & -\/ Coordinate y of the rectangle \\
+\hline
+{\em width} & -\/ Width of the rectangle \\
+\hline
+{\em height} & -\/ Height of the rectangle \\
+\hline
+{\em color} & -\/ Color of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga4d53728322f948683b768482bf4906e8}\label{group__videog_ga4d53728322f948683b768482bf4906e8}} 
+\index{videog@{videog}!vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}}
+\index{vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}!videog@{videog}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ Coordinate x of the rectangle \\
+\hline
+{\em y} & -\/ Coordinate y of the rectangle \\
+\hline
+{\em width} & -\/ Width of the rectangle \\
+\hline
+{\em height} & -\/ Height of the rectangle \\
+\hline
+{\em color} & -\/ Color of the rectangle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{group__videog_ga4d53728322f948683b768482bf4906e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga4d53728322f948683b768482bf4906e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__videog_ga240fc458a4f42c9396bcc98d47f253e3}\label{group__videog_ga240fc458a4f42c9396bcc98d47f253e3}} 
+\index{videog@{videog}!vg\+\_\+draw\+\_\+vline@{vg\+\_\+draw\+\_\+vline}}
+\index{vg\+\_\+draw\+\_\+vline@{vg\+\_\+draw\+\_\+vline}!videog@{videog}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+vline()}{vg\_draw\_vline()}}
+{\footnotesize\ttfamily int vg\+\_\+draw\+\_\+vline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a vertical line on the screem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ Coordinate x of the line \\
+\hline
+{\em y} & -\/ Coordinate y of the line \\
+\hline
+{\em len} & -\/ Length of the line \\
+\hline
+{\em color} & -\/ Color of the line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__videog_ga240fc458a4f42c9396bcc98d47f253e3_icgraph}
+\end{center}
+\end{figure}

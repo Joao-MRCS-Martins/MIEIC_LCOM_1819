@@ -1,0 +1,82 @@
+\hypertarget{group__timer}{}\section{timer}
+\label{group__timer}\index{timer@{timer}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__timer_ga6f786481e80308348d629d605ffa2d84}{timer\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__timer_ga10fc9c867b15c7da6649311c9987cd17}{timer\+\_\+int\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the i8254 timers 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__timer_ga10fc9c867b15c7da6649311c9987cd17}\label{group__timer_ga10fc9c867b15c7da6649311c9987cd17}} 
+\index{timer@{timer}!timer\+\_\+int\+\_\+handler@{timer\+\_\+int\+\_\+handler}}
+\index{timer\+\_\+int\+\_\+handler@{timer\+\_\+int\+\_\+handler}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+int\+\_\+handler()}{timer\_int\_handler()}}
+{\footnotesize\ttfamily void timer\+\_\+int\+\_\+handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Timer 0 interrupt handler. 
+
+Increments counter Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__timer_ga10fc9c867b15c7da6649311c9987cd17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__timer_ga6f786481e80308348d629d605ffa2d84}\label{group__timer_ga6f786481e80308348d629d605ffa2d84}} 
+\index{timer@{timer}!timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}}
+\index{timer\+\_\+subscribe\+\_\+int@{timer\+\_\+subscribe\+\_\+int}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+subscribe\+\_\+int()}{timer\_subscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes and enables Timer 0 interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__timer_ga6f786481e80308348d629d605ffa2d84_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__timer_gab9eea51549744bca5c5c923b388bb4ee}\label{group__timer_gab9eea51549744bca5c5c923b388bb4ee}} 
+\index{timer@{timer}!timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}}
+\index{timer\+\_\+unsubscribe\+\_\+int@{timer\+\_\+unsubscribe\+\_\+int}!timer@{timer}}
+\subsubsection{\texorpdfstring{timer\+\_\+unsubscribe\+\_\+int()}{timer\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int timer\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes Timer 0 interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__timer_gab9eea51549744bca5c5c923b388bb4ee_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,147 @@
+\hypertarget{group__vbe}{}\section{vbe}
+\label{group__vbe}\index{vbe@{vbe}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(n)~(0x01$<$$<$(n))
+\item 
+\#define \mbox{\hyperlink{group__vbe_gab32156e1d72cb92b120bb16883c87eea}{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}}~0x4\+F02
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga8197e70eeb80a1f0cc36435458f43baf}{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}}~0x4\+F01
+\item 
+\#define \mbox{\hyperlink{group__vbe_gad2b9e60cf16cf300fb5538fed61a0709}{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO}}~0x4\+F00
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga0ab1b58dbc6c6d4c63156c11f0a4d854}{V\+B\+E\+\_\+\+I\+NT}}~0x10
+\item 
+\#define \mbox{\hyperlink{group__vbe_gac80fb38edf3a38ac5322ff07dcf8d892}{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}}~0x01
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga70496bc11110b7324b61691cb9539c39}{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW}}~0x02
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga850928fe6587cfce16fce2d3aaec01f8}{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID}}~0x03
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga355fae1bcd41c31540b439bcae26ce65}{S\+E\+G\+M\+E\+NT}}(x)~((x $>$$>$ 16) $<$$<$ 4)
+\item 
+\#define \mbox{\hyperlink{group__vbe_gad12dce0a7bf9d908b172a28155b3d261}{O\+F\+F\+S\+ET}}(x)~(x \& 0x\+F\+F\+F\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__vbe_ga3ed45ade635fef064bfe8c181df1a08f}{change\+\_\+vbe\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Changes the video graphic mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__vbe_ga384e6657ec15cb7f19a2d15b0337b72a}{vbe\+\_\+get\+\_\+info\+\_\+mode}} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$vbe\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Retrieves information about the video graphics memory and stores in a given struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the vbe driver 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}\label{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}} 
+\index{vbe@{vbe}!B\+IT@{B\+IT}}
+\index{B\+IT@{B\+IT}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{B\+IT}{BIT}}
+{\footnotesize\ttfamily \#define B\+IT(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(0x01$<$$<$(n))}
+
+\mbox{\Hypertarget{group__vbe_gac80fb38edf3a38ac5322ff07dcf8d892}\label{group__vbe_gac80fb38edf3a38ac5322ff07dcf8d892}} 
+\index{vbe@{vbe}!F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED@{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}}
+\index{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED@{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}{FUNC\_CALL\_FAILED}}
+{\footnotesize\ttfamily \#define F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED~0x01}
+
+\mbox{\Hypertarget{group__vbe_ga850928fe6587cfce16fce2d3aaec01f8}\label{group__vbe_ga850928fe6587cfce16fce2d3aaec01f8}} 
+\index{vbe@{vbe}!F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID@{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID@{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID}{FUNC\_CALL\_INVALID}}
+{\footnotesize\ttfamily \#define F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID~0x03}
+
+\mbox{\Hypertarget{group__vbe_ga70496bc11110b7324b61691cb9539c39}\label{group__vbe_ga70496bc11110b7324b61691cb9539c39}} 
+\index{vbe@{vbe}!F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW@{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW}}
+\index{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW@{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW}{FUNC\_NOT\_SUPPORT\_HW}}
+{\footnotesize\ttfamily \#define F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW~0x02}
+
+\mbox{\Hypertarget{group__vbe_gad12dce0a7bf9d908b172a28155b3d261}\label{group__vbe_gad12dce0a7bf9d908b172a28155b3d261}} 
+\index{vbe@{vbe}!O\+F\+F\+S\+ET@{O\+F\+F\+S\+ET}}
+\index{O\+F\+F\+S\+ET@{O\+F\+F\+S\+ET}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{O\+F\+F\+S\+ET}{OFFSET}}
+{\footnotesize\ttfamily \#define O\+F\+F\+S\+ET(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(x \& 0x\+F\+F\+F\+F)}
+
+\mbox{\Hypertarget{group__vbe_gad2b9e60cf16cf300fb5538fed61a0709}\label{group__vbe_gad2b9e60cf16cf300fb5538fed61a0709}} 
+\index{vbe@{vbe}!R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO@{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO}}
+\index{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO@{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO}{RET\_VBE\_CTRL\_INFO}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO~0x4\+F00}
+
+\mbox{\Hypertarget{group__vbe_ga8197e70eeb80a1f0cc36435458f43baf}\label{group__vbe_ga8197e70eeb80a1f0cc36435458f43baf}} 
+\index{vbe@{vbe}!R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO@{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}}
+\index{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO@{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}{RET\_VBE\_MODE\_INFO}}
+{\footnotesize\ttfamily \#define R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO~0x4\+F01}
+
+\mbox{\Hypertarget{group__vbe_ga355fae1bcd41c31540b439bcae26ce65}\label{group__vbe_ga355fae1bcd41c31540b439bcae26ce65}} 
+\index{vbe@{vbe}!S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}}
+\index{S\+E\+G\+M\+E\+NT@{S\+E\+G\+M\+E\+NT}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{S\+E\+G\+M\+E\+NT}{SEGMENT}}
+{\footnotesize\ttfamily \#define S\+E\+G\+M\+E\+NT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~((x $>$$>$ 16) $<$$<$ 4)}
+
+\mbox{\Hypertarget{group__vbe_gab32156e1d72cb92b120bb16883c87eea}\label{group__vbe_gab32156e1d72cb92b120bb16883c87eea}} 
+\index{vbe@{vbe}!S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}}
+\index{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}{SET\_VBE\_MODE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE~0x4\+F02}
+
+\mbox{\Hypertarget{group__vbe_ga0ab1b58dbc6c6d4c63156c11f0a4d854}\label{group__vbe_ga0ab1b58dbc6c6d4c63156c11f0a4d854}} 
+\index{vbe@{vbe}!V\+B\+E\+\_\+\+I\+NT@{V\+B\+E\+\_\+\+I\+NT}}
+\index{V\+B\+E\+\_\+\+I\+NT@{V\+B\+E\+\_\+\+I\+NT}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+I\+NT}{VBE\_INT}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+I\+NT~0x10}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__vbe_ga3ed45ade635fef064bfe8c181df1a08f}\label{group__vbe_ga3ed45ade635fef064bfe8c181df1a08f}} 
+\index{vbe@{vbe}!change\+\_\+vbe\+\_\+mode@{change\+\_\+vbe\+\_\+mode}}
+\index{change\+\_\+vbe\+\_\+mode@{change\+\_\+vbe\+\_\+mode}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{change\+\_\+vbe\+\_\+mode()}{change\_vbe\_mode()}}
+{\footnotesize\ttfamily int change\+\_\+vbe\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Changes the video graphic mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ Mode to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__vbe_ga384e6657ec15cb7f19a2d15b0337b72a}\label{group__vbe_ga384e6657ec15cb7f19a2d15b0337b72a}} 
+\index{vbe@{vbe}!vbe\+\_\+get\+\_\+info\+\_\+mode@{vbe\+\_\+get\+\_\+info\+\_\+mode}}
+\index{vbe\+\_\+get\+\_\+info\+\_\+mode@{vbe\+\_\+get\+\_\+info\+\_\+mode}!vbe@{vbe}}
+\subsubsection{\texorpdfstring{vbe\+\_\+get\+\_\+info\+\_\+mode()}{vbe\_get\_info\_mode()}}
+{\footnotesize\ttfamily int vbe\+\_\+get\+\_\+info\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{vbe\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Retrieves information about the video graphics memory and stores in a given struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ Mode to receive information about \\
+\hline
+{\em vbe\+\_\+info} & -\/ Pointer to the struct where the information will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__vbe_ga384e6657ec15cb7f19a2d15b0337b72a_icgraph}
+\end{center}
+\end{figure}

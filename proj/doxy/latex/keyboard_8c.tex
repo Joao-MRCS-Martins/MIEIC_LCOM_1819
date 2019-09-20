@@ -1,0 +1,74 @@
+\hypertarget{keyboard_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.c File Reference}
+\label{keyboard_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__keyboard_gaa8e63a9750dae94729779940343f0150}{keyb\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe keyboard interruptions. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_gac95aea27a5e91b363b876fed881f368f}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe keyboard interruptions. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__keyboard_gab9e6ed7960d60aa4834f2038247d4536}{kbc\+\_\+ih}} (void)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Keyboard interrupt handler\+: collects information from keyboard 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{keyboard_8c_a9cfbb269728dc4185236d28be58d9eab}{cnt}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}{data}} = 0
+\item 
+int \mbox{\hyperlink{keyboard_8c_a581d7c6b8c128e2d037cce52bdc168cf}{ih\+\_\+bool}} = 0
+\item 
+uint8\+\_\+t \mbox{\hyperlink{keyboard_8c_a2f85476a22fd71cb54fee61ca96060f4}{sc\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{keyboard_8c_a439227feff9d7f55384e8780cfc2eb82}{size}} = 0
+\item 
+bool \mbox{\hyperlink{keyboard_8c_ad4fc2d544f41a6c2751efb12dd908213}{make}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{keyboard_8c_a9cfbb269728dc4185236d28be58d9eab}\label{keyboard_8c_a9cfbb269728dc4185236d28be58d9eab}} 
+\index{keyboard.\+c@{keyboard.\+c}!cnt@{cnt}}
+\index{cnt@{cnt}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{cnt}{cnt}}
+{\footnotesize\ttfamily int cnt = 0}
+
+\mbox{\Hypertarget{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}\label{keyboard_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{keyboard.\+c@{keyboard.\+c}!data@{data}}
+\index{data@{data}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data = 0}
+
+\mbox{\Hypertarget{keyboard_8c_a581d7c6b8c128e2d037cce52bdc168cf}\label{keyboard_8c_a581d7c6b8c128e2d037cce52bdc168cf}} 
+\index{keyboard.\+c@{keyboard.\+c}!ih\+\_\+bool@{ih\+\_\+bool}}
+\index{ih\+\_\+bool@{ih\+\_\+bool}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{ih\+\_\+bool}{ih\_bool}}
+{\footnotesize\ttfamily int ih\+\_\+bool = 0}
+
+\mbox{\Hypertarget{keyboard_8c_ad4fc2d544f41a6c2751efb12dd908213}\label{keyboard_8c_ad4fc2d544f41a6c2751efb12dd908213}} 
+\index{keyboard.\+c@{keyboard.\+c}!make@{make}}
+\index{make@{make}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{make}{make}}
+{\footnotesize\ttfamily bool make}
+
+\mbox{\Hypertarget{keyboard_8c_a2f85476a22fd71cb54fee61ca96060f4}\label{keyboard_8c_a2f85476a22fd71cb54fee61ca96060f4}} 
+\index{keyboard.\+c@{keyboard.\+c}!sc\+\_\+code@{sc\+\_\+code}}
+\index{sc\+\_\+code@{sc\+\_\+code}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{sc\+\_\+code}{sc\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t sc\+\_\+code\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{keyboard_8c_a439227feff9d7f55384e8780cfc2eb82}\label{keyboard_8c_a439227feff9d7f55384e8780cfc2eb82}} 
+\index{keyboard.\+c@{keyboard.\+c}!size@{size}}
+\index{size@{size}!keyboard.\+c@{keyboard.\+c}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int size = 0}
+

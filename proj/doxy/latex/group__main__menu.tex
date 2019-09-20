@@ -1,0 +1,286 @@
+\hypertarget{group__main__menu}{}\section{main\+\_\+menu}
+\label{group__main__menu}\index{main\+\_\+menu@{main\+\_\+menu}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_background}{Background}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga44dd1b46a3f55007e78fc1ac506153b9}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}~0
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga81dbe4cce536eb83872b539079ba4139}{G\+A\+ME}}~1
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga28017dea6f5becdb38eba6eac6f51bbc}{C\+R\+E\+D\+I\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gad111e603bbebe5d87f6bc39264ce4733}{E\+X\+IT}}~3
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga601a4ab83713dad6008bf74c4c347914}{P\+L\+A\+Y\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gab3b9dbde965b2ad8e2b7720c26eded37}{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga9e84b26e342c1df4348efbfa6694bccd}{P\+L\+A\+Y\+\_\+Y}}~250
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga265d0b9390156ec1520c0f68c3431c6c}{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT}}~45
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gaeb9fff4c05c42ce4f00cbfe3622b63d0}{C\+R\+E\+D\+I\+T\+S\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gac8aca0d07f517982d67af5081ed2b4f4}{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga2e441d1c4e7d198f1f0d0eb60d331d86}{C\+R\+E\+D\+I\+T\+S\+\_\+Y}}~300
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gac970a6c034ab2b622434972ef2205935}{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT}}~55
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga3040de9a6158b6f62ae7a78d32deffb9}{Q\+U\+I\+T\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga8e5034a101e70e1f511a56f70f32ad37}{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gae60f4142599ff024b4d8d2ca3ebe42e7}{Q\+U\+I\+T\+\_\+Y}}~380
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga3f826023eb74f14d5f48cd11d5385e0a}{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT}}~45
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga5de99031704f5a4356e8fb30d56c4986}{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED}}~1.\+2
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gae541f04deda5a9c9683f7f3866175023}{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE}}~20
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__main__menu_gae70e892130949697cbf1d294be0adf55}{handling\+\_\+interruptions}} (struct packet $\ast$pp1, uint8\+\_\+t irq\+\_\+set\+\_\+mouse)
+\begin{DoxyCompactList}\small\item\em Handles mouse interruptions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__main__menu_ga583b8136014872071b0373049b6fde3c}{draw\+\_\+pointer}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw mouse pointer on screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68}{detect\+\_\+options\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Tracks the mouse related events, presenting to the user the main menu of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__main__menu_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for handle the main menu events 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__main__menu_ga28017dea6f5becdb38eba6eac6f51bbc}\label{group__main__menu_ga28017dea6f5becdb38eba6eac6f51bbc}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+R\+E\+D\+I\+TS@{C\+R\+E\+D\+I\+TS}}
+\index{C\+R\+E\+D\+I\+TS@{C\+R\+E\+D\+I\+TS}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+R\+E\+D\+I\+TS}{CREDITS}}
+{\footnotesize\ttfamily \#define C\+R\+E\+D\+I\+TS~2}
+
+\mbox{\Hypertarget{group__main__menu_gac970a6c034ab2b622434972ef2205935}\label{group__main__menu_gac970a6c034ab2b622434972ef2205935}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT@{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT}}
+\index{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT@{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT}{CREDITS\_HEIGHT}}
+{\footnotesize\ttfamily \#define C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT~55}
+
+\mbox{\Hypertarget{group__main__menu_gac8aca0d07f517982d67af5081ed2b4f4}\label{group__main__menu_gac8aca0d07f517982d67af5081ed2b4f4}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH@{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH}}
+\index{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH@{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH}{CREDITS\_WIDTH}}
+{\footnotesize\ttfamily \#define C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH~150}
+
+\mbox{\Hypertarget{group__main__menu_gaeb9fff4c05c42ce4f00cbfe3622b63d0}\label{group__main__menu_gaeb9fff4c05c42ce4f00cbfe3622b63d0}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+R\+E\+D\+I\+T\+S\+\_\+X@{C\+R\+E\+D\+I\+T\+S\+\_\+X}}
+\index{C\+R\+E\+D\+I\+T\+S\+\_\+X@{C\+R\+E\+D\+I\+T\+S\+\_\+X}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+R\+E\+D\+I\+T\+S\+\_\+X}{CREDITS\_X}}
+{\footnotesize\ttfamily \#define C\+R\+E\+D\+I\+T\+S\+\_\+X~330}
+
+\mbox{\Hypertarget{group__main__menu_ga2e441d1c4e7d198f1f0d0eb60d331d86}\label{group__main__menu_ga2e441d1c4e7d198f1f0d0eb60d331d86}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+R\+E\+D\+I\+T\+S\+\_\+Y@{C\+R\+E\+D\+I\+T\+S\+\_\+Y}}
+\index{C\+R\+E\+D\+I\+T\+S\+\_\+Y@{C\+R\+E\+D\+I\+T\+S\+\_\+Y}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+R\+E\+D\+I\+T\+S\+\_\+Y}{CREDITS\_Y}}
+{\footnotesize\ttfamily \#define C\+R\+E\+D\+I\+T\+S\+\_\+Y~300}
+
+\mbox{\Hypertarget{group__main__menu_gae541f04deda5a9c9683f7f3866175023}\label{group__main__menu_gae541f04deda5a9c9683f7f3866175023}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE@{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE}}
+\index{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE@{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE}{CURSOR\_SIZE}}
+{\footnotesize\ttfamily \#define C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE~20}
+
+\mbox{\Hypertarget{group__main__menu_ga5de99031704f5a4356e8fb30d56c4986}\label{group__main__menu_ga5de99031704f5a4356e8fb30d56c4986}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED@{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED}}
+\index{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED@{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED}{CURSOR\_SPEED}}
+{\footnotesize\ttfamily \#define C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED~1.\+2}
+
+\mbox{\Hypertarget{group__main__menu_gad111e603bbebe5d87f6bc39264ce4733}\label{group__main__menu_gad111e603bbebe5d87f6bc39264ce4733}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!E\+X\+IT@{E\+X\+IT}}
+\index{E\+X\+IT@{E\+X\+IT}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{E\+X\+IT}{EXIT}}
+{\footnotesize\ttfamily \#define E\+X\+IT~3}
+
+\mbox{\Hypertarget{group__main__menu_ga81dbe4cce536eb83872b539079ba4139}\label{group__main__menu_ga81dbe4cce536eb83872b539079ba4139}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!G\+A\+ME@{G\+A\+ME}}
+\index{G\+A\+ME@{G\+A\+ME}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{G\+A\+ME}{GAME}}
+{\footnotesize\ttfamily \#define G\+A\+ME~1}
+
+\mbox{\Hypertarget{group__main__menu_ga44dd1b46a3f55007e78fc1ac506153b9}\label{group__main__menu_ga44dd1b46a3f55007e78fc1ac506153b9}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}}
+\index{M\+A\+I\+N\+\_\+\+M\+E\+NU@{M\+A\+I\+N\+\_\+\+M\+E\+NU}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{M\+A\+I\+N\+\_\+\+M\+E\+NU}{MAIN\_MENU}}
+{\footnotesize\ttfamily \#define M\+A\+I\+N\+\_\+\+M\+E\+NU~0}
+
+\mbox{\Hypertarget{group__main__menu_ga265d0b9390156ec1520c0f68c3431c6c}\label{group__main__menu_ga265d0b9390156ec1520c0f68c3431c6c}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT@{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT}}
+\index{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT@{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT}{PLAY\_HEIGHT}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT~45}
+
+\mbox{\Hypertarget{group__main__menu_gab3b9dbde965b2ad8e2b7720c26eded37}\label{group__main__menu_gab3b9dbde965b2ad8e2b7720c26eded37}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH@{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH}}
+\index{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH@{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH}{PLAY\_WIDTH}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH~150}
+
+\mbox{\Hypertarget{group__main__menu_ga601a4ab83713dad6008bf74c4c347914}\label{group__main__menu_ga601a4ab83713dad6008bf74c4c347914}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!P\+L\+A\+Y\+\_\+X@{P\+L\+A\+Y\+\_\+X}}
+\index{P\+L\+A\+Y\+\_\+X@{P\+L\+A\+Y\+\_\+X}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{P\+L\+A\+Y\+\_\+X}{PLAY\_X}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+\_\+X~330}
+
+\mbox{\Hypertarget{group__main__menu_ga9e84b26e342c1df4348efbfa6694bccd}\label{group__main__menu_ga9e84b26e342c1df4348efbfa6694bccd}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!P\+L\+A\+Y\+\_\+Y@{P\+L\+A\+Y\+\_\+Y}}
+\index{P\+L\+A\+Y\+\_\+Y@{P\+L\+A\+Y\+\_\+Y}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{P\+L\+A\+Y\+\_\+Y}{PLAY\_Y}}
+{\footnotesize\ttfamily \#define P\+L\+A\+Y\+\_\+Y~250}
+
+\mbox{\Hypertarget{group__main__menu_ga3f826023eb74f14d5f48cd11d5385e0a}\label{group__main__menu_ga3f826023eb74f14d5f48cd11d5385e0a}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT@{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT}}
+\index{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT@{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT}{QUIT\_HEIGHT}}
+{\footnotesize\ttfamily \#define Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT~45}
+
+\mbox{\Hypertarget{group__main__menu_ga8e5034a101e70e1f511a56f70f32ad37}\label{group__main__menu_ga8e5034a101e70e1f511a56f70f32ad37}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH@{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH}}
+\index{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH@{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH}{QUIT\_WIDTH}}
+{\footnotesize\ttfamily \#define Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH~150}
+
+\mbox{\Hypertarget{group__main__menu_ga3040de9a6158b6f62ae7a78d32deffb9}\label{group__main__menu_ga3040de9a6158b6f62ae7a78d32deffb9}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!Q\+U\+I\+T\+\_\+X@{Q\+U\+I\+T\+\_\+X}}
+\index{Q\+U\+I\+T\+\_\+X@{Q\+U\+I\+T\+\_\+X}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{Q\+U\+I\+T\+\_\+X}{QUIT\_X}}
+{\footnotesize\ttfamily \#define Q\+U\+I\+T\+\_\+X~330}
+
+\mbox{\Hypertarget{group__main__menu_gae60f4142599ff024b4d8d2ca3ebe42e7}\label{group__main__menu_gae60f4142599ff024b4d8d2ca3ebe42e7}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!Q\+U\+I\+T\+\_\+Y@{Q\+U\+I\+T\+\_\+Y}}
+\index{Q\+U\+I\+T\+\_\+Y@{Q\+U\+I\+T\+\_\+Y}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{Q\+U\+I\+T\+\_\+Y}{QUIT\_Y}}
+{\footnotesize\ttfamily \#define Q\+U\+I\+T\+\_\+Y~380}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68}\label{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!detect\+\_\+options\+\_\+mouse@{detect\+\_\+options\+\_\+mouse}}
+\index{detect\+\_\+options\+\_\+mouse@{detect\+\_\+options\+\_\+mouse}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{detect\+\_\+options\+\_\+mouse()}{detect\_options\_mouse()}}
+{\footnotesize\ttfamily int detect\+\_\+options\+\_\+mouse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tracks the mouse related events, presenting to the user the main menu of the game. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Returns 0 upon sucess and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__main__menu_ga583b8136014872071b0373049b6fde3c}\label{group__main__menu_ga583b8136014872071b0373049b6fde3c}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!draw\+\_\+pointer@{draw\+\_\+pointer}}
+\index{draw\+\_\+pointer@{draw\+\_\+pointer}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{draw\+\_\+pointer()}{draw\_pointer()}}
+{\footnotesize\ttfamily void draw\+\_\+pointer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draw mouse pointer on screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ horizontal position of mouse on screen \\
+\hline
+{\em y} & -\/ vertical position of mouse on screen \\
+\hline
+{\em color} & -\/ color to fill the pointer \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__main__menu_ga583b8136014872071b0373049b6fde3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__main__menu_ga583b8136014872071b0373049b6fde3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__main__menu_gae70e892130949697cbf1d294be0adf55}\label{group__main__menu_gae70e892130949697cbf1d294be0adf55}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!handling\+\_\+interruptions@{handling\+\_\+interruptions}}
+\index{handling\+\_\+interruptions@{handling\+\_\+interruptions}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{handling\+\_\+interruptions()}{handling\_interruptions()}}
+{\footnotesize\ttfamily int handling\+\_\+interruptions (\begin{DoxyParamCaption}\item[{struct packet $\ast$}]{pp1,  }\item[{uint8\+\_\+t}]{irq\+\_\+set\+\_\+mouse }\end{DoxyParamCaption})}
+
+
+
+Handles mouse interruptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pp1} & -\/ packet of information from mouse \\
+\hline
+{\em irq\+\_\+set\+\_\+mouse} & -\/ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__main__menu_gae70e892130949697cbf1d294be0adf55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__main__menu_gae70e892130949697cbf1d294be0adf55_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__main__menu_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__main__menu_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{main\+\_\+menu@{main\+\_\+menu}!image@{image}}
+\index{image@{image}!main\+\_\+menu@{main\+\_\+menu}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+

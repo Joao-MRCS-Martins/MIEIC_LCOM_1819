@@ -1,0 +1,58 @@
+\hypertarget{videog_8h}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/videog.h File Reference}
+\label{videog_8h}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/videog.\+h@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/videog.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__videog_ga06ccfea6efec9fe0bd908d0b142a172d}{B\+Y\+T\+E\+S\+\_\+\+P\+E\+R\+\_\+\+P\+I\+X\+EL}}(x)~((x+7)/8)
+\item 
+\#define \mbox{\hyperlink{group__videog_gac6885dbfb371c33e523c7fb046118b36}{I\+N\+D\+EX}}~0x105
+\item 
+\#define \mbox{\hyperlink{group__videog_ga86720ded03b3f5b5ca53d30b33cb33bb}{D\+I\+R\+E\+CT}}~0x114
+\item 
+\#define \mbox{\hyperlink{group__videog_gac0c27ee88c2ac7437b37445026083b1f}{M\+A\+X\+\_\+\+F\+R\+\_\+\+R\+A\+TE}}~60
+\item 
+\#define \mbox{\hyperlink{group__videog_ga7b3b25cba33b07c303f3060fe41887f6}{B\+L\+A\+CK}}~0x0000
+\item 
+\#define \mbox{\hyperlink{group__videog_ga959d1249a76cfbd90fc6d96e2a9744e9}{L\+I\+G\+H\+T\+\_\+\+B\+L\+UE}}~0x05\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gacfbc006ea433ad708fdee3e82996e721}{G\+R\+E\+EN}}~0x0\+F00
+\item 
+\#define \mbox{\hyperlink{group__videog_ga8d23feea868a983c8c2b661e1e16972f}{R\+ED}}~0x\+F000
+\item 
+\#define \mbox{\hyperlink{group__videog_gada419fe3b48fcf19daed7cc57ccf1174}{P\+I\+NK}}~0x\+F0\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gabf681265909adf3d3e8116c93c0ba179}{Y\+E\+L\+L\+OW}}~0x\+F\+F00
+\item 
+\#define \mbox{\hyperlink{group__videog_gadce122f566c88a1eceeb79a635afa964}{G\+R\+EY}}~0x7\+B\+EF
+\item 
+\#define \mbox{\hyperlink{group__videog_ga79d10e672abb49ad63eeaa8aaef57c38}{B\+L\+UE}}~0x00\+FF
+\item 
+\#define \mbox{\hyperlink{group__videog_gac5b6e19bf06822021f35602c59658de3}{O\+R\+A\+N\+GE}}~0x\+E\+C00
+\item 
+\#define \mbox{\hyperlink{group__videog_ga87b537f5fa5c109d3c05c13d6b18f382}{W\+H\+I\+TE}}~0x\+F\+F\+FF
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__videog_ga442a8d042167564d8248fcd57de6b837}{vg\+\_\+draw\+\_\+pixel}} (unsigned int i, uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color2)
+\begin{DoxyCompactList}\small\item\em Paints a certain pixel with a given color. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_ga240fc458a4f42c9396bcc98d47f253e3}{vg\+\_\+draw\+\_\+vline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a vertical line on the screem. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_gac13ab0fea467c2b1f0ea2f9f4a481270}{vg\+\_\+draw\+\_\+rect\+\_\+empty}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle composed only by its borders. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__videog_ga4d53728322f948683b768482bf4906e8}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__videog_ga8ecfc1971f8bce697d1e02ebf57e6801}{get\+\_\+v\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vertical resolution. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{group__videog_ga53190a84d33dca987a32592d55b0e764}{get\+\_\+h\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em Gets the horizontal resolution. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__videog_ga753e43171fab6674507b8b8042be0906}{get\+\_\+mem}} ()
+\begin{DoxyCompactList}\small\item\em Gets the video memory buffer. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{group__videog_gae16576a0c83561a7c462fb76956e06dc}{get\+\_\+tmp}} ()
+\begin{DoxyCompactList}\small\item\em Gets the temporary video buffer. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{group__videog_ga0a3c7d7f5ab9ad65df3f52a43354c5f7}{get\+\_\+vram\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the vram size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__videog_ga0d199b5702695c4d7b78ef83759c32d5}{clean\+\_\+screen}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the video memory, setting all its content to 0x0000 (Black) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__videog_ga330b56594412c06fcf7c605709352a19}{clean\+\_\+tmp}} ()
+\begin{DoxyCompactList}\small\item\em Cleans the temporary buffer, setting all its content to 0x0000 (Black) \end{DoxyCompactList}\end{DoxyCompactItemize}

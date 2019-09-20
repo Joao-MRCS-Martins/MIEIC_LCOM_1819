@@ -1,0 +1,724 @@
+\hypertarget{group__rtc}{}\section{rtc}
+\label{group__rtc}\index{rtc@{rtc}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_date}{Date}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__rtc_gad27cc17b25bb93134368d5eb21126eae}{B\+IT}}(x)~1$<$$<$x
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}{R\+T\+C\+\_\+\+I\+RQ}}~8
+\item 
+\#define \mbox{\hyperlink{group__rtc_gaee714b0468cb683740ae28b1e0ad25e6}{A\+D\+D\+R\+\_\+\+R\+EG}}~0x70
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga71b8ba376f687142f60a82d18c2715e0}{D\+A\+T\+A\+\_\+\+R\+EG}}~0x71
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}{S\+E\+C\+O\+N\+DS}}~0x00
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}{M\+I\+N\+U\+T\+ES}}~0x02
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}{H\+O\+U\+RS}}~0x04
+\item 
+\#define \mbox{\hyperlink{group__rtc_gacd522b0e92d01c9bb65527206fc17508}{D\+A\+Y\+\_\+\+W\+E\+EK}}~0x06
+\item 
+\#define \mbox{\hyperlink{group__rtc_gaa652d6d52e8e86bfd3659f873c87a340}{D\+A\+Y\+\_\+\+M\+O\+N\+TH}}~0x07
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga3729d06495d9713592f79f3122c9e677}{M\+O\+N\+TH}}~0x08
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga5871356500f559add06ea81d60331b1b}{Y\+E\+AR}}~0x09
+\item 
+\#define \mbox{\hyperlink{group__rtc_gaa0e40d1cb9fea79e800aa79b8ca291f7}{R\+E\+G\+\_\+A}}~0x0A
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga28ed75c6727784e56c2bb8d828c876c9}{R\+E\+G\+\_\+B}}~0x0B
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga088e580de0961d5f30eb3366f97b324c}{R\+E\+G\+\_\+C}}~0x0C
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga8f2a2da8b96e20112d3f225636392424}{R\+E\+G\+\_\+D}}~0\+X0D
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga3289eebd69837790d4aacaccd18d46db}{U\+IP}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga7ebe68dabb3864696a8a466499fbc37d}{S\+E\+T\+\_\+\+R\+TC}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)
+\item 
+\#define \mbox{\hyperlink{group__rtc_gac40c2b49eb51e2adc237b530adfcadf4}{P\+IE}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(6)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga113847820d539c6a6836993b84d22800}{A\+IE}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(5)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga2c276876faf62c1b29fe2383ce4ccfda}{U\+IE}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(4)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga96df1c1afaaa70a1b805c83bad18ff26}{B\+I\+N\+A\+R\+Y\+\_\+\+DM}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(2)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga70514fa1fe27f2ca52b651ff16ed0069}{T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(1)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga8565773f11252b9d615f1b12ac73032d}{I\+R\+QF}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)
+\item 
+\#define \mbox{\hyperlink{group__rtc_gaa0e278c26c25558741febfadd7216caa}{PF}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(6)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga76ba789cde9c36cd57dbb390bdee7661}{AF}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(5)
+\item 
+\#define \mbox{\hyperlink{group__rtc_ga2657a76f02e47fa3f3320fa9c6353f31}{UF}}~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(4)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__rtc_ga7c28e3528db0f743706f9c01608331a7}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bitno)
+\begin{DoxyCompactList}\small\item\em Subscribes R\+TC interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gaf6f18245f611a9c8f64055feae5ec73d}{rtc\+\_\+read\+\_\+register}} (uint32\+\_\+t addr, uint32\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}})
+\begin{DoxyCompactList}\small\item\em Reads R\+TC address passed in the arguments and stores it. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga9b5d85527d676067a8c05780ec46d4f1}{rtc\+\_\+write\+\_\+register}} (uint32\+\_\+t addr, uint32\+\_\+t \mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}})
+\begin{DoxyCompactList}\small\item\em Writes to the R\+TC address passed in the arguments. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7}{rtc\+\_\+enable\+\_\+update\+\_\+ints}} ()
+\begin{DoxyCompactList}\small\item\em Enables update-\/ended interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga6222d2da81f961f574c428db117e610e}{rtc\+\_\+disable\+\_\+update\+\_\+ints}} ()
+\begin{DoxyCompactList}\small\item\em Disables update-\/ended interruptions. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga3d9330b99a772073f924e69bc1b2df05}{rtc\+\_\+read\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em Reads seconds from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gaac43b2266aa06ad5a572d0fa3976ebb0}{rtc\+\_\+read\+\_\+minutes}} ()
+\begin{DoxyCompactList}\small\item\em Reads minutes from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga512adcbde067ca5bb83b1af0e0a7a444}{rtc\+\_\+read\+\_\+hours}} ()
+\begin{DoxyCompactList}\small\item\em Reads hour from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga2e585f34d69246a60a1db0e94ca09c05}{rtc\+\_\+read\+\_\+day\+\_\+week}} ()
+\begin{DoxyCompactList}\small\item\em Reads day of the week from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga59359f9460af7b7dce7a2c8dc9d98211}{rtc\+\_\+read\+\_\+day\+\_\+month}} ()
+\begin{DoxyCompactList}\small\item\em Reads day of the month from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gabd90445bf474121fa89636a17f4c7369}{rtc\+\_\+read\+\_\+month}} ()
+\begin{DoxyCompactList}\small\item\em Reads month from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga4ddd82a19df760d95b2dd0c92ec6c63b}{rtc\+\_\+read\+\_\+year}} ()
+\begin{DoxyCompactList}\small\item\em Reads year from the appropriate register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em R\+TC interrupt handler, reads register C to verify what is the source of the interruptions and handles the information accordingly. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{group__rtc_ga1f2c4f317d879fe00426ee4317bc625f}{get\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_date}{Date}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga1c7900b102529826ac1662355e6cf058}{rtc\+\_\+update\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{struct_date}{Date}} object with new information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gaac3a162d2f192fe2360aba534eac7198}{year}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga55a5fa57878363d803833666ddf3c16f}{month}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga897ed87b95b7a37afeeb935ca0b2366b}{day}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gaa24f12f79f7553236083be08521c546e}{dayW}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga26d5bae76d83086900174b266fd2cd82}{hour}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga2dcb690348d97b756f4d165c80c9af7d}{minutes}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga6d5694839ec935781627e5c52de21fda}{seconds}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the real-\/time clock 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__rtc_gaee714b0468cb683740ae28b1e0ad25e6}\label{group__rtc_gaee714b0468cb683740ae28b1e0ad25e6}} 
+\index{rtc@{rtc}!A\+D\+D\+R\+\_\+\+R\+EG@{A\+D\+D\+R\+\_\+\+R\+EG}}
+\index{A\+D\+D\+R\+\_\+\+R\+EG@{A\+D\+D\+R\+\_\+\+R\+EG}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{A\+D\+D\+R\+\_\+\+R\+EG}{ADDR\_REG}}
+{\footnotesize\ttfamily \#define A\+D\+D\+R\+\_\+\+R\+EG~0x70}
+
+\mbox{\Hypertarget{group__rtc_ga76ba789cde9c36cd57dbb390bdee7661}\label{group__rtc_ga76ba789cde9c36cd57dbb390bdee7661}} 
+\index{rtc@{rtc}!AF@{AF}}
+\index{AF@{AF}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{AF}{AF}}
+{\footnotesize\ttfamily \#define AF~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(5)}
+
+\mbox{\Hypertarget{group__rtc_ga113847820d539c6a6836993b84d22800}\label{group__rtc_ga113847820d539c6a6836993b84d22800}} 
+\index{rtc@{rtc}!A\+IE@{A\+IE}}
+\index{A\+IE@{A\+IE}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{A\+IE}{AIE}}
+{\footnotesize\ttfamily \#define A\+IE~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(5)}
+
+\mbox{\Hypertarget{group__rtc_ga96df1c1afaaa70a1b805c83bad18ff26}\label{group__rtc_ga96df1c1afaaa70a1b805c83bad18ff26}} 
+\index{rtc@{rtc}!B\+I\+N\+A\+R\+Y\+\_\+\+DM@{B\+I\+N\+A\+R\+Y\+\_\+\+DM}}
+\index{B\+I\+N\+A\+R\+Y\+\_\+\+DM@{B\+I\+N\+A\+R\+Y\+\_\+\+DM}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{B\+I\+N\+A\+R\+Y\+\_\+\+DM}{BINARY\_DM}}
+{\footnotesize\ttfamily \#define B\+I\+N\+A\+R\+Y\+\_\+\+DM~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(2)}
+
+\mbox{\Hypertarget{group__rtc_gad27cc17b25bb93134368d5eb21126eae}\label{group__rtc_gad27cc17b25bb93134368d5eb21126eae}} 
+\index{rtc@{rtc}!B\+IT@{B\+IT}}
+\index{B\+IT@{B\+IT}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{B\+IT}{BIT}}
+{\footnotesize\ttfamily \#define B\+IT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~1$<$$<$x}
+
+\mbox{\Hypertarget{group__rtc_ga71b8ba376f687142f60a82d18c2715e0}\label{group__rtc_ga71b8ba376f687142f60a82d18c2715e0}} 
+\index{rtc@{rtc}!D\+A\+T\+A\+\_\+\+R\+EG@{D\+A\+T\+A\+\_\+\+R\+EG}}
+\index{D\+A\+T\+A\+\_\+\+R\+EG@{D\+A\+T\+A\+\_\+\+R\+EG}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+R\+EG}{DATA\_REG}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+R\+EG~0x71}
+
+\mbox{\Hypertarget{group__rtc_gaa652d6d52e8e86bfd3659f873c87a340}\label{group__rtc_gaa652d6d52e8e86bfd3659f873c87a340}} 
+\index{rtc@{rtc}!D\+A\+Y\+\_\+\+M\+O\+N\+TH@{D\+A\+Y\+\_\+\+M\+O\+N\+TH}}
+\index{D\+A\+Y\+\_\+\+M\+O\+N\+TH@{D\+A\+Y\+\_\+\+M\+O\+N\+TH}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{D\+A\+Y\+\_\+\+M\+O\+N\+TH}{DAY\_MONTH}}
+{\footnotesize\ttfamily \#define D\+A\+Y\+\_\+\+M\+O\+N\+TH~0x07}
+
+\mbox{\Hypertarget{group__rtc_gacd522b0e92d01c9bb65527206fc17508}\label{group__rtc_gacd522b0e92d01c9bb65527206fc17508}} 
+\index{rtc@{rtc}!D\+A\+Y\+\_\+\+W\+E\+EK@{D\+A\+Y\+\_\+\+W\+E\+EK}}
+\index{D\+A\+Y\+\_\+\+W\+E\+EK@{D\+A\+Y\+\_\+\+W\+E\+EK}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{D\+A\+Y\+\_\+\+W\+E\+EK}{DAY\_WEEK}}
+{\footnotesize\ttfamily \#define D\+A\+Y\+\_\+\+W\+E\+EK~0x06}
+
+\mbox{\Hypertarget{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}\label{group__rtc_ga212d0f839f6f7ca43ccde311f93d5892}} 
+\index{rtc@{rtc}!H\+O\+U\+RS@{H\+O\+U\+RS}}
+\index{H\+O\+U\+RS@{H\+O\+U\+RS}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{H\+O\+U\+RS}{HOURS}}
+{\footnotesize\ttfamily \#define H\+O\+U\+RS~0x04}
+
+\mbox{\Hypertarget{group__rtc_ga8565773f11252b9d615f1b12ac73032d}\label{group__rtc_ga8565773f11252b9d615f1b12ac73032d}} 
+\index{rtc@{rtc}!I\+R\+QF@{I\+R\+QF}}
+\index{I\+R\+QF@{I\+R\+QF}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{I\+R\+QF}{IRQF}}
+{\footnotesize\ttfamily \#define I\+R\+QF~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)}
+
+\mbox{\Hypertarget{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}\label{group__rtc_ga84be9dcfa5a172ee83121620d15c8e29}} 
+\index{rtc@{rtc}!M\+I\+N\+U\+T\+ES@{M\+I\+N\+U\+T\+ES}}
+\index{M\+I\+N\+U\+T\+ES@{M\+I\+N\+U\+T\+ES}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{M\+I\+N\+U\+T\+ES}{MINUTES}}
+{\footnotesize\ttfamily \#define M\+I\+N\+U\+T\+ES~0x02}
+
+\mbox{\Hypertarget{group__rtc_ga3729d06495d9713592f79f3122c9e677}\label{group__rtc_ga3729d06495d9713592f79f3122c9e677}} 
+\index{rtc@{rtc}!M\+O\+N\+TH@{M\+O\+N\+TH}}
+\index{M\+O\+N\+TH@{M\+O\+N\+TH}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{M\+O\+N\+TH}{MONTH}}
+{\footnotesize\ttfamily \#define M\+O\+N\+TH~0x08}
+
+\mbox{\Hypertarget{group__rtc_gaa0e278c26c25558741febfadd7216caa}\label{group__rtc_gaa0e278c26c25558741febfadd7216caa}} 
+\index{rtc@{rtc}!PF@{PF}}
+\index{PF@{PF}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{PF}{PF}}
+{\footnotesize\ttfamily \#define PF~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(6)}
+
+\mbox{\Hypertarget{group__rtc_gac40c2b49eb51e2adc237b530adfcadf4}\label{group__rtc_gac40c2b49eb51e2adc237b530adfcadf4}} 
+\index{rtc@{rtc}!P\+IE@{P\+IE}}
+\index{P\+IE@{P\+IE}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{P\+IE}{PIE}}
+{\footnotesize\ttfamily \#define P\+IE~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(6)}
+
+\mbox{\Hypertarget{group__rtc_gaa0e40d1cb9fea79e800aa79b8ca291f7}\label{group__rtc_gaa0e40d1cb9fea79e800aa79b8ca291f7}} 
+\index{rtc@{rtc}!R\+E\+G\+\_\+A@{R\+E\+G\+\_\+A}}
+\index{R\+E\+G\+\_\+A@{R\+E\+G\+\_\+A}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+E\+G\+\_\+A}{REG\_A}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+A~0x0A}
+
+\mbox{\Hypertarget{group__rtc_ga28ed75c6727784e56c2bb8d828c876c9}\label{group__rtc_ga28ed75c6727784e56c2bb8d828c876c9}} 
+\index{rtc@{rtc}!R\+E\+G\+\_\+B@{R\+E\+G\+\_\+B}}
+\index{R\+E\+G\+\_\+B@{R\+E\+G\+\_\+B}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+E\+G\+\_\+B}{REG\_B}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+B~0x0B}
+
+\mbox{\Hypertarget{group__rtc_ga088e580de0961d5f30eb3366f97b324c}\label{group__rtc_ga088e580de0961d5f30eb3366f97b324c}} 
+\index{rtc@{rtc}!R\+E\+G\+\_\+C@{R\+E\+G\+\_\+C}}
+\index{R\+E\+G\+\_\+C@{R\+E\+G\+\_\+C}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+E\+G\+\_\+C}{REG\_C}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+C~0x0C}
+
+\mbox{\Hypertarget{group__rtc_ga8f2a2da8b96e20112d3f225636392424}\label{group__rtc_ga8f2a2da8b96e20112d3f225636392424}} 
+\index{rtc@{rtc}!R\+E\+G\+\_\+D@{R\+E\+G\+\_\+D}}
+\index{R\+E\+G\+\_\+D@{R\+E\+G\+\_\+D}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+E\+G\+\_\+D}{REG\_D}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+D~0\+X0D}
+
+\mbox{\Hypertarget{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}\label{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}} 
+\index{rtc@{rtc}!R\+T\+C\+\_\+\+I\+RQ@{R\+T\+C\+\_\+\+I\+RQ}}
+\index{R\+T\+C\+\_\+\+I\+RQ@{R\+T\+C\+\_\+\+I\+RQ}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{R\+T\+C\+\_\+\+I\+RQ}{RTC\_IRQ}}
+{\footnotesize\ttfamily \#define R\+T\+C\+\_\+\+I\+RQ~8}
+
+\mbox{\Hypertarget{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}\label{group__rtc_ga48fcf4f2eeef6769d588168d4ac2ab0e}} 
+\index{rtc@{rtc}!S\+E\+C\+O\+N\+DS@{S\+E\+C\+O\+N\+DS}}
+\index{S\+E\+C\+O\+N\+DS@{S\+E\+C\+O\+N\+DS}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{S\+E\+C\+O\+N\+DS}{SECONDS}}
+{\footnotesize\ttfamily \#define S\+E\+C\+O\+N\+DS~0x00}
+
+\mbox{\Hypertarget{group__rtc_ga7ebe68dabb3864696a8a466499fbc37d}\label{group__rtc_ga7ebe68dabb3864696a8a466499fbc37d}} 
+\index{rtc@{rtc}!S\+E\+T\+\_\+\+R\+TC@{S\+E\+T\+\_\+\+R\+TC}}
+\index{S\+E\+T\+\_\+\+R\+TC@{S\+E\+T\+\_\+\+R\+TC}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+R\+TC}{SET\_RTC}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+R\+TC~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)}
+
+\mbox{\Hypertarget{group__rtc_ga70514fa1fe27f2ca52b651ff16ed0069}\label{group__rtc_ga70514fa1fe27f2ca52b651ff16ed0069}} 
+\index{rtc@{rtc}!T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H@{T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H}}
+\index{T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H@{T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H}{TIME\_FORMAT\_24H}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+24H~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(1)}
+
+\mbox{\Hypertarget{group__rtc_ga2657a76f02e47fa3f3320fa9c6353f31}\label{group__rtc_ga2657a76f02e47fa3f3320fa9c6353f31}} 
+\index{rtc@{rtc}!UF@{UF}}
+\index{UF@{UF}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{UF}{UF}}
+{\footnotesize\ttfamily \#define UF~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(4)}
+
+\mbox{\Hypertarget{group__rtc_ga2c276876faf62c1b29fe2383ce4ccfda}\label{group__rtc_ga2c276876faf62c1b29fe2383ce4ccfda}} 
+\index{rtc@{rtc}!U\+IE@{U\+IE}}
+\index{U\+IE@{U\+IE}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{U\+IE}{UIE}}
+{\footnotesize\ttfamily \#define U\+IE~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(4)}
+
+\mbox{\Hypertarget{group__rtc_ga3289eebd69837790d4aacaccd18d46db}\label{group__rtc_ga3289eebd69837790d4aacaccd18d46db}} 
+\index{rtc@{rtc}!U\+IP@{U\+IP}}
+\index{U\+IP@{U\+IP}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{U\+IP}{UIP}}
+{\footnotesize\ttfamily \#define U\+IP~\mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(7)}
+
+\mbox{\Hypertarget{group__rtc_ga5871356500f559add06ea81d60331b1b}\label{group__rtc_ga5871356500f559add06ea81d60331b1b}} 
+\index{rtc@{rtc}!Y\+E\+AR@{Y\+E\+AR}}
+\index{Y\+E\+AR@{Y\+E\+AR}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{Y\+E\+AR}{YEAR}}
+{\footnotesize\ttfamily \#define Y\+E\+AR~0x09}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__rtc_ga1f2c4f317d879fe00426ee4317bc625f}\label{group__rtc_ga1f2c4f317d879fe00426ee4317bc625f}} 
+\index{rtc@{rtc}!get\+\_\+date@{get\+\_\+date}}
+\index{get\+\_\+date@{get\+\_\+date}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{get\+\_\+date()}{get\_date()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_date}{Date}} get\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the \mbox{\hyperlink{struct_date}{Date}} object. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_date}{Date}} -\/ returns the current date 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga1f2c4f317d879fe00426ee4317bc625f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga6222d2da81f961f574c428db117e610e}\label{group__rtc_ga6222d2da81f961f574c428db117e610e}} 
+\index{rtc@{rtc}!rtc\+\_\+disable\+\_\+update\+\_\+ints@{rtc\+\_\+disable\+\_\+update\+\_\+ints}}
+\index{rtc\+\_\+disable\+\_\+update\+\_\+ints@{rtc\+\_\+disable\+\_\+update\+\_\+ints}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+disable\+\_\+update\+\_\+ints()}{rtc\_disable\_update\_ints()}}
+{\footnotesize\ttfamily int rtc\+\_\+disable\+\_\+update\+\_\+ints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables update-\/ended interruptions. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{group__rtc_ga6222d2da81f961f574c428db117e610e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga6222d2da81f961f574c428db117e610e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7}\label{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7}} 
+\index{rtc@{rtc}!rtc\+\_\+enable\+\_\+update\+\_\+ints@{rtc\+\_\+enable\+\_\+update\+\_\+ints}}
+\index{rtc\+\_\+enable\+\_\+update\+\_\+ints@{rtc\+\_\+enable\+\_\+update\+\_\+ints}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+enable\+\_\+update\+\_\+ints()}{rtc\_enable\_update\_ints()}}
+{\footnotesize\ttfamily int rtc\+\_\+enable\+\_\+update\+\_\+ints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables update-\/ended interruptions. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056}\label{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056}} 
+\index{rtc@{rtc}!rtc\+\_\+ih@{rtc\+\_\+ih}}
+\index{rtc\+\_\+ih@{rtc\+\_\+ih}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily void rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+R\+TC interrupt handler, reads register C to verify what is the source of the interruptions and handles the information accordingly. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga59359f9460af7b7dce7a2c8dc9d98211}\label{group__rtc_ga59359f9460af7b7dce7a2c8dc9d98211}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+day\+\_\+month@{rtc\+\_\+read\+\_\+day\+\_\+month}}
+\index{rtc\+\_\+read\+\_\+day\+\_\+month@{rtc\+\_\+read\+\_\+day\+\_\+month}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+day\+\_\+month()}{rtc\_read\_day\_month()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+day\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads day of the month from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the day of the month in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{group__rtc_ga59359f9460af7b7dce7a2c8dc9d98211_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga2e585f34d69246a60a1db0e94ca09c05}\label{group__rtc_ga2e585f34d69246a60a1db0e94ca09c05}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+day\+\_\+week@{rtc\+\_\+read\+\_\+day\+\_\+week}}
+\index{rtc\+\_\+read\+\_\+day\+\_\+week@{rtc\+\_\+read\+\_\+day\+\_\+week}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+day\+\_\+week()}{rtc\_read\_day\_week()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+day\+\_\+week (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads day of the week from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the day of the week in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{group__rtc_ga2e585f34d69246a60a1db0e94ca09c05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga512adcbde067ca5bb83b1af0e0a7a444}\label{group__rtc_ga512adcbde067ca5bb83b1af0e0a7a444}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+hours@{rtc\+\_\+read\+\_\+hours}}
+\index{rtc\+\_\+read\+\_\+hours@{rtc\+\_\+read\+\_\+hours}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+hours()}{rtc\_read\_hours()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads hour from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the hour in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{group__rtc_ga512adcbde067ca5bb83b1af0e0a7a444_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gaac43b2266aa06ad5a572d0fa3976ebb0}\label{group__rtc_gaac43b2266aa06ad5a572d0fa3976ebb0}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+minutes@{rtc\+\_\+read\+\_\+minutes}}
+\index{rtc\+\_\+read\+\_\+minutes@{rtc\+\_\+read\+\_\+minutes}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+minutes()}{rtc\_read\_minutes()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads minutes from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the minutes in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{group__rtc_gaac43b2266aa06ad5a572d0fa3976ebb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gabd90445bf474121fa89636a17f4c7369}\label{group__rtc_gabd90445bf474121fa89636a17f4c7369}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+month@{rtc\+\_\+read\+\_\+month}}
+\index{rtc\+\_\+read\+\_\+month@{rtc\+\_\+read\+\_\+month}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+month()}{rtc\_read\_month()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads month from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the month in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{group__rtc_gabd90445bf474121fa89636a17f4c7369_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gaf6f18245f611a9c8f64055feae5ec73d}\label{group__rtc_gaf6f18245f611a9c8f64055feae5ec73d}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+register@{rtc\+\_\+read\+\_\+register}}
+\index{rtc\+\_\+read\+\_\+register@{rtc\+\_\+read\+\_\+register}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+register()}{rtc\_read\_register()}}
+{\footnotesize\ttfamily int rtc\+\_\+read\+\_\+register (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{uint32\+\_\+t $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Reads R\+TC address passed in the arguments and stores it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & -\/ R\+TC address to be accessed and read \\
+\hline
+{\em data} & -\/ pointer to the location where data will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gaf6f18245f611a9c8f64055feae5ec73d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga3d9330b99a772073f924e69bc1b2df05}\label{group__rtc_ga3d9330b99a772073f924e69bc1b2df05}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+seconds@{rtc\+\_\+read\+\_\+seconds}}
+\index{rtc\+\_\+read\+\_\+seconds@{rtc\+\_\+read\+\_\+seconds}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+seconds()}{rtc\_read\_seconds()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads seconds from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the seconds in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{group__rtc_ga3d9330b99a772073f924e69bc1b2df05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga4ddd82a19df760d95b2dd0c92ec6c63b}\label{group__rtc_ga4ddd82a19df760d95b2dd0c92ec6c63b}} 
+\index{rtc@{rtc}!rtc\+\_\+read\+\_\+year@{rtc\+\_\+read\+\_\+year}}
+\index{rtc\+\_\+read\+\_\+year@{rtc\+\_\+read\+\_\+year}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read\+\_\+year()}{rtc\_read\_year()}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+read\+\_\+year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads year from the appropriate register. 
+
+\begin{DoxyReturn}{Returns}
+uint32\+\_\+t -\/ Returns the year in the B\+CD format 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{group__rtc_ga4ddd82a19df760d95b2dd0c92ec6c63b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga7c28e3528db0f743706f9c01608331a7}\label{group__rtc_ga7c28e3528db0f743706f9c01608331a7}} 
+\index{rtc@{rtc}!rtc\+\_\+subscribe\+\_\+int@{rtc\+\_\+subscribe\+\_\+int}}
+\index{rtc\+\_\+subscribe\+\_\+int@{rtc\+\_\+subscribe\+\_\+int}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+subscribe\+\_\+int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bitno }\end{DoxyParamCaption})}
+
+
+
+Subscribes R\+TC interruptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bitno} & -\/ address of memory to be initialized with the bit number to be set in the mask returned upon an interrupt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga7c28e3528db0f743706f9c01608331a7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga7c28e3528db0f743706f9c01608331a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}\label{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}} 
+\index{rtc@{rtc}!rtc\+\_\+unsubscribe\+\_\+int@{rtc\+\_\+unsubscribe\+\_\+int}}
+\index{rtc\+\_\+unsubscribe\+\_\+int@{rtc\+\_\+unsubscribe\+\_\+int}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+unsubscribe\+\_\+int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes R\+TC interruptions. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gab8f17bf5280c908c8b199a90fefcc758_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_gab8f17bf5280c908c8b199a90fefcc758_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga1c7900b102529826ac1662355e6cf058}\label{group__rtc_ga1c7900b102529826ac1662355e6cf058}} 
+\index{rtc@{rtc}!rtc\+\_\+update\+\_\+date@{rtc\+\_\+update\+\_\+date}}
+\index{rtc\+\_\+update\+\_\+date@{rtc\+\_\+update\+\_\+date}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+update\+\_\+date()}{rtc\_update\_date()}}
+{\footnotesize\ttfamily int rtc\+\_\+update\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the \mbox{\hyperlink{struct_date}{Date}} object with new information. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{group__rtc_ga1c7900b102529826ac1662355e6cf058_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga1c7900b102529826ac1662355e6cf058_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__rtc_ga9b5d85527d676067a8c05780ec46d4f1}\label{group__rtc_ga9b5d85527d676067a8c05780ec46d4f1}} 
+\index{rtc@{rtc}!rtc\+\_\+write\+\_\+register@{rtc\+\_\+write\+\_\+register}}
+\index{rtc\+\_\+write\+\_\+register@{rtc\+\_\+write\+\_\+register}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{rtc\+\_\+write\+\_\+register()}{rtc\_write\_register()}}
+{\footnotesize\ttfamily int rtc\+\_\+write\+\_\+register (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Writes to the R\+TC address passed in the arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & -\/ R\+TC address to be accesed and altered \\
+\hline
+{\em data} & -\/ Data to be written to the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__rtc_ga9b5d85527d676067a8c05780ec46d4f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__rtc_ga897ed87b95b7a37afeeb935ca0b2366b}\label{group__rtc_ga897ed87b95b7a37afeeb935ca0b2366b}} 
+\index{rtc@{rtc}!day@{day}}
+\index{day@{day}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily uint32\+\_\+t day}
+
+\mbox{\Hypertarget{group__rtc_gaa24f12f79f7553236083be08521c546e}\label{group__rtc_gaa24f12f79f7553236083be08521c546e}} 
+\index{rtc@{rtc}!dayW@{dayW}}
+\index{dayW@{dayW}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{dayW}{dayW}}
+{\footnotesize\ttfamily uint32\+\_\+t dayW}
+
+\mbox{\Hypertarget{group__rtc_ga26d5bae76d83086900174b266fd2cd82}\label{group__rtc_ga26d5bae76d83086900174b266fd2cd82}} 
+\index{rtc@{rtc}!hour@{hour}}
+\index{hour@{hour}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint32\+\_\+t hour}
+
+\mbox{\Hypertarget{group__rtc_ga2dcb690348d97b756f4d165c80c9af7d}\label{group__rtc_ga2dcb690348d97b756f4d165c80c9af7d}} 
+\index{rtc@{rtc}!minutes@{minutes}}
+\index{minutes@{minutes}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily uint32\+\_\+t minutes}
+
+\mbox{\Hypertarget{group__rtc_ga55a5fa57878363d803833666ddf3c16f}\label{group__rtc_ga55a5fa57878363d803833666ddf3c16f}} 
+\index{rtc@{rtc}!month@{month}}
+\index{month@{month}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily uint32\+\_\+t month}
+
+\mbox{\Hypertarget{group__rtc_ga6d5694839ec935781627e5c52de21fda}\label{group__rtc_ga6d5694839ec935781627e5c52de21fda}} 
+\index{rtc@{rtc}!seconds@{seconds}}
+\index{seconds@{seconds}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily uint32\+\_\+t seconds}
+
+\mbox{\Hypertarget{group__rtc_gaac3a162d2f192fe2360aba534eac7198}\label{group__rtc_gaac3a162d2f192fe2360aba534eac7198}} 
+\index{rtc@{rtc}!year@{year}}
+\index{year@{year}!rtc@{rtc}}
+\subsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily uint32\+\_\+t year}
+

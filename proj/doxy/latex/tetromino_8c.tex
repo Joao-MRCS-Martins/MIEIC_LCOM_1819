@@ -1,0 +1,27 @@
+\hypertarget{tetromino_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/tetromino.c File Reference}
+\label{tetromino_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/tetromino.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/tetromino.\+c}}
+{\ttfamily \#include \char`\"{}tetromino.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/lcf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}videog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}update\+\_\+mov.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t() \mbox{\hyperlink{group__tetramino_gaec1f53f8b300eba51c8863f3fcb5478b}{choose\+\_\+color}} (int n\+Shape)
+\begin{DoxyCompactList}\small\item\em Chooses the color of the piece according to its shape. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__tetramino_gaed055860f4584eb217234f06c29d3ab4}{check\+\_\+for\+\_\+gameover}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Checks the board current status and if the player has reached to gameover state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_gaab50f02f99355b3ceb43290e186fe609}{check\+\_\+eliminate\+\_\+line}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Check the lines where a \mbox{\hyperlink{struct_tetramino}{Tetramino}} lands to see if a line has been completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga2f2a68722efc3ecbd82eea0a337f6b7f}{update\+\_\+board\+\_\+after\+\_\+line}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$bd, int position)
+\begin{DoxyCompactList}\small\item\em Updates the board after a line has been removed. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339}{draw\+\_\+squares}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$bd)
+\begin{DoxyCompactList}\small\item\em Draws all squares of the board, painting it black the empty positions and non-\/black those who belong to tetraminos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$() \mbox{\hyperlink{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1}{new\+\_\+tetramino}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Creates a new tetramino and loads initial information of the piece. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_board}{Board}} $\ast$ \mbox{\hyperlink{group__tetramino_ga3d4977293a2989f9483b897b1a5bd073}{new\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new board and loads initial information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga5ab138241d19c1826240ea803c970d9d}{delete\+\_\+board}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Deletes a board and frees the memory allocated to the struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga562ee8dcd3b145bafdf0311f1a3b7296}{delete\+\_\+tetramino}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Deletes a tetramino and frees the memory alloacted to the struct. \end{DoxyCompactList}\end{DoxyCompactItemize}

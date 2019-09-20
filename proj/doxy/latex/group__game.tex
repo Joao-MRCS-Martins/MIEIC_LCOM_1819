@@ -1,0 +1,554 @@
+\hypertarget{group__game}{}\section{game}
+\label{group__game}\index{game@{game}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgame_over}{game\+Over}}
+\item 
+struct \mbox{\hyperlink{structtetris}{tetris}}
+\item 
+struct \mbox{\hyperlink{structpnt}{pnt}}
+\item 
+struct \mbox{\hyperlink{structscoreimg}{scoreimg}}
+\item 
+struct \mbox{\hyperlink{structlvl}{lvl}}
+\item 
+struct \mbox{\hyperlink{structldig}{ldig}}
+\item 
+struct \mbox{\hyperlink{struct_date__image}{Date\+\_\+image}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__game_ga690efe7a045abbfc9b27e560a2ec9513}{A\+M\+A\+KE}}~0x1E
+\item 
+\#define \mbox{\hyperlink{group__game_ga44e36af0ac2ecc5ef350ba0be8942ec2}{D\+M\+A\+KE}}~0x20
+\item 
+\#define \mbox{\hyperlink{group__game_gac1a92d19df172666cb200a4af8dda91c}{S\+P\+A\+C\+E\+M\+A\+KE}}~0x39
+\item 
+\#define \mbox{\hyperlink{group__game_ga03947a021c40104691ad783d365f4e10}{S\+M\+A\+KE}}~0x1F
+\item 
+\#define \mbox{\hyperlink{group__game_ga1e09a1aa8665e3937510ff8c14fc7fa7}{A\+B\+R\+E\+AK}}~0x9E
+\item 
+\#define \mbox{\hyperlink{group__game_gab38702ad72d18f40a1ee070106d30718}{D\+B\+R\+E\+AK}}~0x\+A0
+\item 
+\#define \mbox{\hyperlink{group__game_gae1b188c4c1653daaa218b7de29a1d743}{S\+P\+A\+C\+E\+B\+R\+E\+AK}}~0x\+B9
+\item 
+\#define \mbox{\hyperlink{group__game_ga5b832c74ca8bf6ffabf7d4190eded9f9}{S\+B\+R\+E\+AK}}~0x9F
+\item 
+\#define \mbox{\hyperlink{group__game_ga4af1b6159e447ba72652bb7fcdfa726e}{E\+SC}}~0x81
+\item 
+\#define \mbox{\hyperlink{group__game_ga8c3a1040415b05ec42d4ff34b27a7c29}{G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND}}~3
+\item 
+\#define \mbox{\hyperlink{group__game_ga3b5dc51b11999829eff0e40d21279e3b}{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE}}~10
+\item 
+\#define \mbox{\hyperlink{group__game_ga66dedf1c8c1aefa0530444a033186ac8}{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2}}~30
+\item 
+\#define \mbox{\hyperlink{group__game_ga9de0f4d507922c46865095e4d4ddd538}{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3}}~40
+\item 
+\#define \mbox{\hyperlink{group__game_ga16a7908b8d52a1c554db7f11af689c78}{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4}}~60
+\item 
+\#define \mbox{\hyperlink{group__game_ga77fed468d8077df04b2a583249ea9ec3}{R\+A\+T\+E\+\_\+\+L\+V\+L1}}~20
+\item 
+\#define \mbox{\hyperlink{group__game_ga53f5b2e837f82146bdbbfcbe864a3787}{R\+A\+T\+E\+\_\+\+L\+V\+L2}}~15
+\item 
+\#define \mbox{\hyperlink{group__game_gad8d89481d86fee32a968b72da932456d}{R\+A\+T\+E\+\_\+\+L\+V\+L13}}~10
+\item 
+\#define \mbox{\hyperlink{group__game_ga43ac83d9bacb381715d00f2d81869c81}{S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS}}~100
+\item 
+\#define \mbox{\hyperlink{group__game_ga52fa9d2055cff71b5a6fbdaef721dad0}{S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS}}~700
+\item 
+\#define \mbox{\hyperlink{group__game_ga1943a6fd02085a111e2e228b6c8257c8}{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS}}~510
+\item 
+\#define \mbox{\hyperlink{group__game_ga0798d3f568ec40fefb913cf04738fe38}{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS}}~400
+\item 
+\#define \mbox{\hyperlink{group__game_ga3d9c227aaa4ac1d98dfb5f13af4106f2}{T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X}}~400
+\item 
+\#define \mbox{\hyperlink{group__game_ga443a6b6a37a38501a81ab30095410ac1}{x\+\_\+b\+\_\+left}}~230
+\item 
+\#define \mbox{\hyperlink{group__game_gaf01c6e35b7b83fe4f9365249f997e26c}{x\+\_\+b\+\_\+right}}~550
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__game_gaf426df873300d051272115729c8fa5a1}{write\+\_\+lvL}} (int level, \mbox{\hyperlink{structldig}{ldig}} $\ast$l)
+\begin{DoxyCompactList}\small\item\em Writes the level on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga4447b1a565fed3c6130bf9e38970b933}{write\+\_\+score}} (int pont, \mbox{\hyperlink{structpnt}{pnt}} $\ast$u, int x, int y)
+\begin{DoxyCompactList}\small\item\em Writes the score on the screen and in the game end. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga75e50926d07db9cfd2bad44c163f2bdd}{draw\+\_\+date\+\_\+str}} (\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{game_8c_a85641069b0d4478ab8a7356c3bf32ea3}{d}}, \mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$di)
+\begin{DoxyCompactList}\small\item\em Writes the date on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga11d44633d3eb30282274511c8a8d7511}{paint\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Draws on the screen the exteriors of the game\+: title, borders,score and level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga553ba6d099151083884ae0d6c1e76771}{game\+\_\+movement\+\_\+options}} (uint32\+\_\+t \mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, int $\ast$make\+\_\+nbr, \mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Receives keyboard information and handles the event of the game accordingly. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__game_gaa449f1959d3595ac0d0b88d643b1acd4}{game\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Main function of the game, handles the flow of the game and presents the info to the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gac6c44260c9d002d8a21c4bfd44b2fd88}{delete\+\_\+info}} (\mbox{\hyperlink{structpnt}{pnt}} $\ast$u, \mbox{\hyperlink{structldig}{ldig}} $\ast$ld, \mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$dimag)
+\begin{DoxyCompactList}\small\item\em Deletes the allocated memory, allowing to free memory space. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__game_ga221b757ab658deb87f4ccd865d29a9ff}{driver\+\_\+\+Receive}} (endpoint\+\_\+t any, message $\ast$m, int $\ast$\mbox{\hyperlink{game_8c_ab9f863ebaa3805a6e366e055cd35626a}{ipc\+\_\+status}})
+\begin{DoxyCompactList}\small\item\em Wrapper function for driver\+\_\+receive. Used only for function call graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\item 
+\mbox{\hyperlink{struct_bitmap}{Bitmap}} $\ast$ \mbox{\hyperlink{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}{image}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for handling the game 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__game_ga1e09a1aa8665e3937510ff8c14fc7fa7}\label{group__game_ga1e09a1aa8665e3937510ff8c14fc7fa7}} 
+\index{game@{game}!A\+B\+R\+E\+AK@{A\+B\+R\+E\+AK}}
+\index{A\+B\+R\+E\+AK@{A\+B\+R\+E\+AK}!game@{game}}
+\subsubsection{\texorpdfstring{A\+B\+R\+E\+AK}{ABREAK}}
+{\footnotesize\ttfamily \#define A\+B\+R\+E\+AK~0x9E}
+
+\mbox{\Hypertarget{group__game_ga690efe7a045abbfc9b27e560a2ec9513}\label{group__game_ga690efe7a045abbfc9b27e560a2ec9513}} 
+\index{game@{game}!A\+M\+A\+KE@{A\+M\+A\+KE}}
+\index{A\+M\+A\+KE@{A\+M\+A\+KE}!game@{game}}
+\subsubsection{\texorpdfstring{A\+M\+A\+KE}{AMAKE}}
+{\footnotesize\ttfamily \#define A\+M\+A\+KE~0x1E}
+
+\mbox{\Hypertarget{group__game_gab38702ad72d18f40a1ee070106d30718}\label{group__game_gab38702ad72d18f40a1ee070106d30718}} 
+\index{game@{game}!D\+B\+R\+E\+AK@{D\+B\+R\+E\+AK}}
+\index{D\+B\+R\+E\+AK@{D\+B\+R\+E\+AK}!game@{game}}
+\subsubsection{\texorpdfstring{D\+B\+R\+E\+AK}{DBREAK}}
+{\footnotesize\ttfamily \#define D\+B\+R\+E\+AK~0x\+A0}
+
+\mbox{\Hypertarget{group__game_ga44e36af0ac2ecc5ef350ba0be8942ec2}\label{group__game_ga44e36af0ac2ecc5ef350ba0be8942ec2}} 
+\index{game@{game}!D\+M\+A\+KE@{D\+M\+A\+KE}}
+\index{D\+M\+A\+KE@{D\+M\+A\+KE}!game@{game}}
+\subsubsection{\texorpdfstring{D\+M\+A\+KE}{DMAKE}}
+{\footnotesize\ttfamily \#define D\+M\+A\+KE~0x20}
+
+\mbox{\Hypertarget{group__game_ga4af1b6159e447ba72652bb7fcdfa726e}\label{group__game_ga4af1b6159e447ba72652bb7fcdfa726e}} 
+\index{game@{game}!E\+SC@{E\+SC}}
+\index{E\+SC@{E\+SC}!game@{game}}
+\subsubsection{\texorpdfstring{E\+SC}{ESC}}
+{\footnotesize\ttfamily \#define E\+SC~0x81}
+
+\mbox{\Hypertarget{group__game_ga8c3a1040415b05ec42d4ff34b27a7c29}\label{group__game_ga8c3a1040415b05ec42d4ff34b27a7c29}} 
+\index{game@{game}!G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND@{G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND}}
+\index{G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND@{G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND}!game@{game}}
+\subsubsection{\texorpdfstring{G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND}{GAMEOVER\_END}}
+{\footnotesize\ttfamily \#define G\+A\+M\+E\+O\+V\+E\+R\+\_\+\+E\+ND~3}
+
+\mbox{\Hypertarget{group__game_ga3b5dc51b11999829eff0e40d21279e3b}\label{group__game_ga3b5dc51b11999829eff0e40d21279e3b}} 
+\index{game@{game}!P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE}}
+\index{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE}!game@{game}}
+\subsubsection{\texorpdfstring{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE}{POINTS\_PER\_LINE}}
+{\footnotesize\ttfamily \#define P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+NE~10}
+
+\mbox{\Hypertarget{group__game_ga66dedf1c8c1aefa0530444a033186ac8}\label{group__game_ga66dedf1c8c1aefa0530444a033186ac8}} 
+\index{game@{game}!P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2}}
+\index{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2}!game@{game}}
+\subsubsection{\texorpdfstring{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2}{POINTS\_PER\_LINE\_2}}
+{\footnotesize\ttfamily \#define P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+2~30}
+
+\mbox{\Hypertarget{group__game_ga9de0f4d507922c46865095e4d4ddd538}\label{group__game_ga9de0f4d507922c46865095e4d4ddd538}} 
+\index{game@{game}!P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3}}
+\index{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3}!game@{game}}
+\subsubsection{\texorpdfstring{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3}{POINTS\_PER\_LINE\_3}}
+{\footnotesize\ttfamily \#define P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+3~40}
+
+\mbox{\Hypertarget{group__game_ga16a7908b8d52a1c554db7f11af689c78}\label{group__game_ga16a7908b8d52a1c554db7f11af689c78}} 
+\index{game@{game}!P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4}}
+\index{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4@{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4}!game@{game}}
+\subsubsection{\texorpdfstring{P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4}{POINTS\_PER\_LINE\_4}}
+{\footnotesize\ttfamily \#define P\+O\+I\+N\+T\+S\+\_\+\+P\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+4~60}
+
+\mbox{\Hypertarget{group__game_ga77fed468d8077df04b2a583249ea9ec3}\label{group__game_ga77fed468d8077df04b2a583249ea9ec3}} 
+\index{game@{game}!R\+A\+T\+E\+\_\+\+L\+V\+L1@{R\+A\+T\+E\+\_\+\+L\+V\+L1}}
+\index{R\+A\+T\+E\+\_\+\+L\+V\+L1@{R\+A\+T\+E\+\_\+\+L\+V\+L1}!game@{game}}
+\subsubsection{\texorpdfstring{R\+A\+T\+E\+\_\+\+L\+V\+L1}{RATE\_LVL1}}
+{\footnotesize\ttfamily \#define R\+A\+T\+E\+\_\+\+L\+V\+L1~20}
+
+\mbox{\Hypertarget{group__game_gad8d89481d86fee32a968b72da932456d}\label{group__game_gad8d89481d86fee32a968b72da932456d}} 
+\index{game@{game}!R\+A\+T\+E\+\_\+\+L\+V\+L13@{R\+A\+T\+E\+\_\+\+L\+V\+L13}}
+\index{R\+A\+T\+E\+\_\+\+L\+V\+L13@{R\+A\+T\+E\+\_\+\+L\+V\+L13}!game@{game}}
+\subsubsection{\texorpdfstring{R\+A\+T\+E\+\_\+\+L\+V\+L13}{RATE\_LVL13}}
+{\footnotesize\ttfamily \#define R\+A\+T\+E\+\_\+\+L\+V\+L13~10}
+
+\mbox{\Hypertarget{group__game_ga53f5b2e837f82146bdbbfcbe864a3787}\label{group__game_ga53f5b2e837f82146bdbbfcbe864a3787}} 
+\index{game@{game}!R\+A\+T\+E\+\_\+\+L\+V\+L2@{R\+A\+T\+E\+\_\+\+L\+V\+L2}}
+\index{R\+A\+T\+E\+\_\+\+L\+V\+L2@{R\+A\+T\+E\+\_\+\+L\+V\+L2}!game@{game}}
+\subsubsection{\texorpdfstring{R\+A\+T\+E\+\_\+\+L\+V\+L2}{RATE\_LVL2}}
+{\footnotesize\ttfamily \#define R\+A\+T\+E\+\_\+\+L\+V\+L2~15}
+
+\mbox{\Hypertarget{group__game_ga5b832c74ca8bf6ffabf7d4190eded9f9}\label{group__game_ga5b832c74ca8bf6ffabf7d4190eded9f9}} 
+\index{game@{game}!S\+B\+R\+E\+AK@{S\+B\+R\+E\+AK}}
+\index{S\+B\+R\+E\+AK@{S\+B\+R\+E\+AK}!game@{game}}
+\subsubsection{\texorpdfstring{S\+B\+R\+E\+AK}{SBREAK}}
+{\footnotesize\ttfamily \#define S\+B\+R\+E\+AK~0x9F}
+
+\mbox{\Hypertarget{group__game_ga0798d3f568ec40fefb913cf04738fe38}\label{group__game_ga0798d3f568ec40fefb913cf04738fe38}} 
+\index{game@{game}!S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS}}
+\index{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS}!game@{game}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS}{SCORE\_FINAL\_X\_POS}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+X\+\_\+\+P\+OS~400}
+
+\mbox{\Hypertarget{group__game_ga1943a6fd02085a111e2e228b6c8257c8}\label{group__game_ga1943a6fd02085a111e2e228b6c8257c8}} 
+\index{game@{game}!S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS}}
+\index{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS}!game@{game}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS}{SCORE\_FINAL\_Y\_POS}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+Y\+\_\+\+P\+OS~510}
+
+\mbox{\Hypertarget{group__game_ga52fa9d2055cff71b5a6fbdaef721dad0}\label{group__game_ga52fa9d2055cff71b5a6fbdaef721dad0}} 
+\index{game@{game}!S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS}}
+\index{S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS}!game@{game}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS}{SCORE\_X\_POS}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+X\+\_\+\+P\+OS~700}
+
+\mbox{\Hypertarget{group__game_ga43ac83d9bacb381715d00f2d81869c81}\label{group__game_ga43ac83d9bacb381715d00f2d81869c81}} 
+\index{game@{game}!S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS}}
+\index{S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS@{S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS}!game@{game}}
+\subsubsection{\texorpdfstring{S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS}{SCORE\_Y\_POS}}
+{\footnotesize\ttfamily \#define S\+C\+O\+R\+E\+\_\+\+Y\+\_\+\+P\+OS~100}
+
+\mbox{\Hypertarget{group__game_ga03947a021c40104691ad783d365f4e10}\label{group__game_ga03947a021c40104691ad783d365f4e10}} 
+\index{game@{game}!S\+M\+A\+KE@{S\+M\+A\+KE}}
+\index{S\+M\+A\+KE@{S\+M\+A\+KE}!game@{game}}
+\subsubsection{\texorpdfstring{S\+M\+A\+KE}{SMAKE}}
+{\footnotesize\ttfamily \#define S\+M\+A\+KE~0x1F}
+
+\mbox{\Hypertarget{group__game_gae1b188c4c1653daaa218b7de29a1d743}\label{group__game_gae1b188c4c1653daaa218b7de29a1d743}} 
+\index{game@{game}!S\+P\+A\+C\+E\+B\+R\+E\+AK@{S\+P\+A\+C\+E\+B\+R\+E\+AK}}
+\index{S\+P\+A\+C\+E\+B\+R\+E\+AK@{S\+P\+A\+C\+E\+B\+R\+E\+AK}!game@{game}}
+\subsubsection{\texorpdfstring{S\+P\+A\+C\+E\+B\+R\+E\+AK}{SPACEBREAK}}
+{\footnotesize\ttfamily \#define S\+P\+A\+C\+E\+B\+R\+E\+AK~0x\+B9}
+
+\mbox{\Hypertarget{group__game_gac1a92d19df172666cb200a4af8dda91c}\label{group__game_gac1a92d19df172666cb200a4af8dda91c}} 
+\index{game@{game}!S\+P\+A\+C\+E\+M\+A\+KE@{S\+P\+A\+C\+E\+M\+A\+KE}}
+\index{S\+P\+A\+C\+E\+M\+A\+KE@{S\+P\+A\+C\+E\+M\+A\+KE}!game@{game}}
+\subsubsection{\texorpdfstring{S\+P\+A\+C\+E\+M\+A\+KE}{SPACEMAKE}}
+{\footnotesize\ttfamily \#define S\+P\+A\+C\+E\+M\+A\+KE~0x39}
+
+\mbox{\Hypertarget{group__game_ga3d9c227aaa4ac1d98dfb5f13af4106f2}\label{group__game_ga3d9c227aaa4ac1d98dfb5f13af4106f2}} 
+\index{game@{game}!T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X@{T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X}}
+\index{T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X@{T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X}!game@{game}}
+\subsubsection{\texorpdfstring{T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X}{TETRIS\_IMG\_X}}
+{\footnotesize\ttfamily \#define T\+E\+T\+R\+I\+S\+\_\+\+I\+M\+G\+\_\+X~400}
+
+\mbox{\Hypertarget{group__game_ga443a6b6a37a38501a81ab30095410ac1}\label{group__game_ga443a6b6a37a38501a81ab30095410ac1}} 
+\index{game@{game}!x\+\_\+b\+\_\+left@{x\+\_\+b\+\_\+left}}
+\index{x\+\_\+b\+\_\+left@{x\+\_\+b\+\_\+left}!game@{game}}
+\subsubsection{\texorpdfstring{x\+\_\+b\+\_\+left}{x\_b\_left}}
+{\footnotesize\ttfamily \#define x\+\_\+b\+\_\+left~230}
+
+\mbox{\Hypertarget{group__game_gaf01c6e35b7b83fe4f9365249f997e26c}\label{group__game_gaf01c6e35b7b83fe4f9365249f997e26c}} 
+\index{game@{game}!x\+\_\+b\+\_\+right@{x\+\_\+b\+\_\+right}}
+\index{x\+\_\+b\+\_\+right@{x\+\_\+b\+\_\+right}!game@{game}}
+\subsubsection{\texorpdfstring{x\+\_\+b\+\_\+right}{x\_b\_right}}
+{\footnotesize\ttfamily \#define x\+\_\+b\+\_\+right~550}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__game_gac6c44260c9d002d8a21c4bfd44b2fd88}\label{group__game_gac6c44260c9d002d8a21c4bfd44b2fd88}} 
+\index{game@{game}!delete\+\_\+info@{delete\+\_\+info}}
+\index{delete\+\_\+info@{delete\+\_\+info}!game@{game}}
+\subsubsection{\texorpdfstring{delete\+\_\+info()}{delete\_info()}}
+{\footnotesize\ttfamily void delete\+\_\+info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpnt}{pnt}} $\ast$}]{u,  }\item[{\mbox{\hyperlink{structldig}{ldig}} $\ast$}]{ld,  }\item[{\mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$}]{dimag }\end{DoxyParamCaption})}
+
+
+
+Deletes the allocated memory, allowing to free memory space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & -\/ Pointer to the struct where the score bitmap is stored \\
+\hline
+{\em ld} & -\/ Pointer to the struct where the level bitmap is stored \\
+\hline
+{\em dimag} & -\/ Pointer to the struct where the date bitmap is stored \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gac6c44260c9d002d8a21c4bfd44b2fd88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga75e50926d07db9cfd2bad44c163f2bdd}\label{group__game_ga75e50926d07db9cfd2bad44c163f2bdd}} 
+\index{game@{game}!draw\+\_\+date\+\_\+str@{draw\+\_\+date\+\_\+str}}
+\index{draw\+\_\+date\+\_\+str@{draw\+\_\+date\+\_\+str}!game@{game}}
+\subsubsection{\texorpdfstring{draw\+\_\+date\+\_\+str()}{draw\_date\_str()}}
+{\footnotesize\ttfamily void draw\+\_\+date\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date}{Date}}}]{d,  }\item[{\mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$}]{di }\end{DoxyParamCaption})}
+
+
+
+Writes the date on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & -\/ Contains information about the date \\
+\hline
+{\em di} & -\/ Pointer to the struct in which is stored the bitmap of the date \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga75e50926d07db9cfd2bad44c163f2bdd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga75e50926d07db9cfd2bad44c163f2bdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga221b757ab658deb87f4ccd865d29a9ff}\label{group__game_ga221b757ab658deb87f4ccd865d29a9ff}} 
+\index{game@{game}!driver\+\_\+\+Receive@{driver\+\_\+\+Receive}}
+\index{driver\+\_\+\+Receive@{driver\+\_\+\+Receive}!game@{game}}
+\subsubsection{\texorpdfstring{driver\+\_\+\+Receive()}{driver\_Receive()}}
+{\footnotesize\ttfamily uint8\+\_\+t driver\+\_\+\+Receive (\begin{DoxyParamCaption}\item[{endpoint\+\_\+t}]{any,  }\item[{message $\ast$}]{m,  }\item[{int $\ast$}]{ipc\+\_\+status }\end{DoxyParamCaption})}
+
+
+
+Wrapper function for driver\+\_\+receive. Used only for function call graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em any} & \\
+\hline
+{\em m} & \\
+\hline
+{\em ipc\+\_\+status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint8\+\_\+t 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga221b757ab658deb87f4ccd865d29a9ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gaa449f1959d3595ac0d0b88d643b1acd4}\label{group__game_gaa449f1959d3595ac0d0b88d643b1acd4}} 
+\index{game@{game}!game\+\_\+main@{game\+\_\+main}}
+\index{game\+\_\+main@{game\+\_\+main}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+main()}{game\_main()}}
+{\footnotesize\ttfamily int game\+\_\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function of the game, handles the flow of the game and presents the info to the player. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ Returns 0 if all went as expected, returns 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__game_gaa449f1959d3595ac0d0b88d643b1acd4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{group__game_gaa449f1959d3595ac0d0b88d643b1acd4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga553ba6d099151083884ae0d6c1e76771}\label{group__game_ga553ba6d099151083884ae0d6c1e76771}} 
+\index{game@{game}!game\+\_\+movement\+\_\+options@{game\+\_\+movement\+\_\+options}}
+\index{game\+\_\+movement\+\_\+options@{game\+\_\+movement\+\_\+options}!game@{game}}
+\subsubsection{\texorpdfstring{game\+\_\+movement\+\_\+options()}{game\_movement\_options()}}
+{\footnotesize\ttfamily void game\+\_\+movement\+\_\+options (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{data,  }\item[{int $\ast$}]{make\+\_\+nbr,  }\item[{\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Receives keyboard information and handles the event of the game accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ keyboard scancode \\
+\hline
+{\em make\+\_\+nbr} & -\/ keeps track of the times a key is pressed to prevent unexpected movements \\
+\hline
+{\em t} & -\/ Pointer to the struct that contains the information about a tetramino \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga553ba6d099151083884ae0d6c1e76771_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga553ba6d099151083884ae0d6c1e76771_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga11d44633d3eb30282274511c8a8d7511}\label{group__game_ga11d44633d3eb30282274511c8a8d7511}} 
+\index{game@{game}!paint\+\_\+game@{paint\+\_\+game}}
+\index{paint\+\_\+game@{paint\+\_\+game}!game@{game}}
+\subsubsection{\texorpdfstring{paint\+\_\+game()}{paint\_game()}}
+{\footnotesize\ttfamily void paint\+\_\+game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws on the screen the exteriors of the game\+: title, borders,score and level. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga11d44633d3eb30282274511c8a8d7511_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga11d44633d3eb30282274511c8a8d7511_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gaf426df873300d051272115729c8fa5a1}\label{group__game_gaf426df873300d051272115729c8fa5a1}} 
+\index{game@{game}!write\+\_\+lvL@{write\+\_\+lvL}}
+\index{write\+\_\+lvL@{write\+\_\+lvL}!game@{game}}
+\subsubsection{\texorpdfstring{write\+\_\+lv\+L()}{write\_lvL()}}
+{\footnotesize\ttfamily void write\+\_\+lvL (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{\mbox{\hyperlink{structldig}{ldig}} $\ast$}]{l }\end{DoxyParamCaption})}
+
+
+
+Writes the level on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & -\/ Indicates which level the player is on (1,2 or 3) \\
+\hline
+{\em l} & -\/ Pointer to the struct in which is stored the bitmap of the level \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{group__game_gaf426df873300d051272115729c8fa5a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_gaf426df873300d051272115729c8fa5a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga4447b1a565fed3c6130bf9e38970b933}\label{group__game_ga4447b1a565fed3c6130bf9e38970b933}} 
+\index{game@{game}!write\+\_\+score@{write\+\_\+score}}
+\index{write\+\_\+score@{write\+\_\+score}!game@{game}}
+\subsubsection{\texorpdfstring{write\+\_\+score()}{write\_score()}}
+{\footnotesize\ttfamily void write\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{pont,  }\item[{\mbox{\hyperlink{structpnt}{pnt}} $\ast$}]{u,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Writes the score on the screen and in the game end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pont} & -\/ The score obtained by the user \\
+\hline
+{\em u} & -\/ Pointer to the struct in which is stored the bitmap of the score \\
+\hline
+{\em x} & -\/ The x coordinate to place the score \\
+\hline
+{\em y} & -\/ The y coordinate to place the score \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga4447b1a565fed3c6130bf9e38970b933_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__game_ga4447b1a565fed3c6130bf9e38970b933_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+
+\mbox{\Hypertarget{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}\label{group__game_ga801bef0ab9d72c95bc5d6d6a0d8f2db0}} 
+\index{game@{game}!image@{image}}
+\index{image@{image}!game@{game}}
+\subsubsection{\texorpdfstring{image}{image}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bitmap}{Bitmap}}$\ast$ image}
+

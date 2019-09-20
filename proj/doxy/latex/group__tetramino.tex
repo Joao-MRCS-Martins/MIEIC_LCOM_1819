@@ -1,0 +1,446 @@
+\hypertarget{group__tetramino}{}\section{tetramino}
+\label{group__tetramino}\index{tetramino@{tetramino}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_square}{Square}}
+\item 
+struct \mbox{\hyperlink{struct_board}{Board}}
+\item 
+struct \mbox{\hyperlink{struct_tetramino}{Tetramino}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__tetramino_ga70ed59adcb4159ac551058053e649640}{S\+I\+ZE}}~20
+\item 
+\#define \mbox{\hyperlink{group__tetramino_gaf53d889f840b107b1a7ffd5534d8a484}{S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER}}~580
+\item 
+\#define \mbox{\hyperlink{group__tetramino_ga3aca436a21c820e0632d5d815a520189}{N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER}}~160
+\item 
+\#define \mbox{\hyperlink{group__tetramino_gaec71d31827b6eb16515454097e75cf12}{E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER}}~550
+\item 
+\#define \mbox{\hyperlink{group__tetramino_gae6a8f15a920bce5c0cbcf2577915268e}{W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER}}~230
+\item 
+\#define \mbox{\hyperlink{group__tetramino_gab6ccafbecf8edd9189e074574b652c91}{M\+O\+V\+E\+\_\+\+D\+O\+WN}}~true
+\item 
+\#define \mbox{\hyperlink{group__tetramino_gac6d51f1ce7e6114465d635e6b8411d2c}{M\+A\+X\+\_\+\+B\+O\+A\+RD}}~299
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_gaec1f53f8b300eba51c8863f3fcb5478b}{choose\+\_\+color}} (int shape\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Chooses the color of the piece according to its shape. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__tetramino_gaed055860f4584eb217234f06c29d3ab4}{check\+\_\+for\+\_\+gameover}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Checks the board current status and if the player has reached to gameover state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_gaab50f02f99355b3ceb43290e186fe609}{check\+\_\+eliminate\+\_\+line}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Check the lines where a \mbox{\hyperlink{struct_tetramino}{Tetramino}} lands to see if a line has been completed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga2f2a68722efc3ecbd82eea0a337f6b7f}{update\+\_\+board\+\_\+after\+\_\+line}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$bd, int position)
+\begin{DoxyCompactList}\small\item\em Updates the board after a line has been removed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339}{draw\+\_\+squares}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$bd)
+\begin{DoxyCompactList}\small\item\em Draws all squares of the board, painting it black the empty positions and non-\/black those who belong to tetraminos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$ \mbox{\hyperlink{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1}{new\+\_\+tetramino}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Creates a new tetramino and loads initial information of the piece. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_board}{Board}} $\ast$ \mbox{\hyperlink{group__tetramino_ga3d4977293a2989f9483b897b1a5bd073}{new\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new board and loads initial information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga5ab138241d19c1826240ea803c970d9d}{delete\+\_\+board}} (\mbox{\hyperlink{struct_board}{Board}} $\ast$board)
+\begin{DoxyCompactList}\small\item\em Deletes a board and frees the memory allocated to the struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__tetramino_ga562ee8dcd3b145bafdf0311f1a3b7296}{delete\+\_\+tetramino}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Deletes a tetramino and frees the memory alloacted to the struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga4dde988b1b2adba65ae3efa69f65d960}{x}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_gab0580f504a7428539be299fa71565f30}{y}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}{color}}
+\item 
+\mbox{\hyperlink{struct_square}{Square}} \mbox{\hyperlink{group__tetramino_ga4eedd16e00191125d9b7c28eed681ef4}{positions}} \mbox{[}300\mbox{]}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_gad0eab1042455a2067c812ab8071d5376}{width}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga81c9f8d0b8c3b49d770be14dbe9f0d37}{height}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga92d26140c764e05f62f37639fb87fc88}{x\+\_\+gini}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_gafccac8a8a85671bdaf9a927aaefb0b05}{y\+\_\+gini}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga9d0491d7027bf54689b51ff9e57b3703}{sqidx}} \mbox{[}4\mbox{]}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}{color}}
+\item 
+int \mbox{\hyperlink{group__tetramino_gae4edf8f6630ef7f8b4c587348a3001a7}{rot}}
+\item 
+\mbox{\hyperlink{struct_board}{Board}} $\ast$ \mbox{\hyperlink{group__tetramino_ga30c121d94ba906148e5a4b0546e723a3}{bd}}
+\item 
+int \mbox{\hyperlink{group__tetramino_ga7aa41fc2efed4bde82530b155c4000f1}{shape\+\_\+n}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for manipulating tetraminos and board 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__tetramino_gaec71d31827b6eb16515454097e75cf12}\label{group__tetramino_gaec71d31827b6eb16515454097e75cf12}} 
+\index{tetramino@{tetramino}!E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER@{E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER}}
+\index{E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER@{E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER}{EAST\_BORDER}}
+{\footnotesize\ttfamily \#define E\+A\+S\+T\+\_\+\+B\+O\+R\+D\+ER~550}
+
+\mbox{\Hypertarget{group__tetramino_gac6d51f1ce7e6114465d635e6b8411d2c}\label{group__tetramino_gac6d51f1ce7e6114465d635e6b8411d2c}} 
+\index{tetramino@{tetramino}!M\+A\+X\+\_\+\+B\+O\+A\+RD@{M\+A\+X\+\_\+\+B\+O\+A\+RD}}
+\index{M\+A\+X\+\_\+\+B\+O\+A\+RD@{M\+A\+X\+\_\+\+B\+O\+A\+RD}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+B\+O\+A\+RD}{MAX\_BOARD}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+B\+O\+A\+RD~299}
+
+\mbox{\Hypertarget{group__tetramino_gab6ccafbecf8edd9189e074574b652c91}\label{group__tetramino_gab6ccafbecf8edd9189e074574b652c91}} 
+\index{tetramino@{tetramino}!M\+O\+V\+E\+\_\+\+D\+O\+WN@{M\+O\+V\+E\+\_\+\+D\+O\+WN}}
+\index{M\+O\+V\+E\+\_\+\+D\+O\+WN@{M\+O\+V\+E\+\_\+\+D\+O\+WN}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{M\+O\+V\+E\+\_\+\+D\+O\+WN}{MOVE\_DOWN}}
+{\footnotesize\ttfamily \#define M\+O\+V\+E\+\_\+\+D\+O\+WN~true}
+
+\mbox{\Hypertarget{group__tetramino_ga3aca436a21c820e0632d5d815a520189}\label{group__tetramino_ga3aca436a21c820e0632d5d815a520189}} 
+\index{tetramino@{tetramino}!N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER@{N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER}}
+\index{N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER@{N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER}{NORTH\_BORDER}}
+{\footnotesize\ttfamily \#define N\+O\+R\+T\+H\+\_\+\+B\+O\+R\+D\+ER~160}
+
+\mbox{\Hypertarget{group__tetramino_ga70ed59adcb4159ac551058053e649640}\label{group__tetramino_ga70ed59adcb4159ac551058053e649640}} 
+\index{tetramino@{tetramino}!S\+I\+ZE@{S\+I\+ZE}}
+\index{S\+I\+ZE@{S\+I\+ZE}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{S\+I\+ZE}{SIZE}}
+{\footnotesize\ttfamily \#define S\+I\+ZE~20}
+
+\mbox{\Hypertarget{group__tetramino_gaf53d889f840b107b1a7ffd5534d8a484}\label{group__tetramino_gaf53d889f840b107b1a7ffd5534d8a484}} 
+\index{tetramino@{tetramino}!S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER@{S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER}}
+\index{S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER@{S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER}{SOUTH\_BORDER}}
+{\footnotesize\ttfamily \#define S\+O\+U\+T\+H\+\_\+\+B\+O\+R\+D\+ER~580}
+
+\mbox{\Hypertarget{group__tetramino_gae6a8f15a920bce5c0cbcf2577915268e}\label{group__tetramino_gae6a8f15a920bce5c0cbcf2577915268e}} 
+\index{tetramino@{tetramino}!W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER@{W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER}}
+\index{W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER@{W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER}{WEST\_BORDER}}
+{\footnotesize\ttfamily \#define W\+E\+S\+T\+\_\+\+B\+O\+R\+D\+ER~230}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__tetramino_gaab50f02f99355b3ceb43290e186fe609}\label{group__tetramino_gaab50f02f99355b3ceb43290e186fe609}} 
+\index{tetramino@{tetramino}!check\+\_\+eliminate\+\_\+line@{check\+\_\+eliminate\+\_\+line}}
+\index{check\+\_\+eliminate\+\_\+line@{check\+\_\+eliminate\+\_\+line}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{check\+\_\+eliminate\+\_\+line()}{check\_eliminate\_line()}}
+{\footnotesize\ttfamily void check\+\_\+eliminate\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$}]{t,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Check the lines where a \mbox{\hyperlink{struct_tetramino}{Tetramino}} lands to see if a line has been completed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ Pointer to the tetramino struct \\
+\hline
+{\em pos} & -\/ Pointer to the array of positions \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_gaab50f02f99355b3ceb43290e186fe609_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_gaed055860f4584eb217234f06c29d3ab4}\label{group__tetramino_gaed055860f4584eb217234f06c29d3ab4}} 
+\index{tetramino@{tetramino}!check\+\_\+for\+\_\+gameover@{check\+\_\+for\+\_\+gameover}}
+\index{check\+\_\+for\+\_\+gameover@{check\+\_\+for\+\_\+gameover}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{check\+\_\+for\+\_\+gameover()}{check\_for\_gameover()}}
+{\footnotesize\ttfamily bool check\+\_\+for\+\_\+gameover (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_board}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Checks the board current status and if the player has reached to gameover state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & -\/ Pointer to the board struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ If the player reached game over 
+
+false -\/ If the player hasn\textquotesingle{}t reached the end game 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_gaed055860f4584eb217234f06c29d3ab4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_gaec1f53f8b300eba51c8863f3fcb5478b}\label{group__tetramino_gaec1f53f8b300eba51c8863f3fcb5478b}} 
+\index{tetramino@{tetramino}!choose\+\_\+color@{choose\+\_\+color}}
+\index{choose\+\_\+color@{choose\+\_\+color}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{choose\+\_\+color()}{choose\_color()}}
+{\footnotesize\ttfamily uint16\+\_\+t choose\+\_\+color (\begin{DoxyParamCaption}\item[{int}]{shape\+\_\+n }\end{DoxyParamCaption})}
+
+
+
+Chooses the color of the piece according to its shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape\+\_\+n} & -\/ Identifies the piece shape \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint16\+\_\+t -\/ Return the color in 16-\/bit mode 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_gaec1f53f8b300eba51c8863f3fcb5478b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga5ab138241d19c1826240ea803c970d9d}\label{group__tetramino_ga5ab138241d19c1826240ea803c970d9d}} 
+\index{tetramino@{tetramino}!delete\+\_\+board@{delete\+\_\+board}}
+\index{delete\+\_\+board@{delete\+\_\+board}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{delete\+\_\+board()}{delete\_board()}}
+{\footnotesize\ttfamily void delete\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_board}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Deletes a board and frees the memory allocated to the struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & -\/ Pointer to the board to be deleted \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga5ab138241d19c1826240ea803c970d9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga562ee8dcd3b145bafdf0311f1a3b7296}\label{group__tetramino_ga562ee8dcd3b145bafdf0311f1a3b7296}} 
+\index{tetramino@{tetramino}!delete\+\_\+tetramino@{delete\+\_\+tetramino}}
+\index{delete\+\_\+tetramino@{delete\+\_\+tetramino}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{delete\+\_\+tetramino()}{delete\_tetramino()}}
+{\footnotesize\ttfamily void delete\+\_\+tetramino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Deletes a tetramino and frees the memory alloacted to the struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ Pointer to the tetramino to be deleted \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga562ee8dcd3b145bafdf0311f1a3b7296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339}\label{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339}} 
+\index{tetramino@{tetramino}!draw\+\_\+squares@{draw\+\_\+squares}}
+\index{draw\+\_\+squares@{draw\+\_\+squares}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{draw\+\_\+squares()}{draw\_squares()}}
+{\footnotesize\ttfamily void draw\+\_\+squares (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_board}{Board}} $\ast$}]{bd }\end{DoxyParamCaption})}
+
+
+
+Draws all squares of the board, painting it black the empty positions and non-\/black those who belong to tetraminos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bd} & -\/ Pointer to the board \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga64e78e0b93dcd6d9b3092b4b8d1fd339_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga3d4977293a2989f9483b897b1a5bd073}\label{group__tetramino_ga3d4977293a2989f9483b897b1a5bd073}} 
+\index{tetramino@{tetramino}!new\+\_\+board@{new\+\_\+board}}
+\index{new\+\_\+board@{new\+\_\+board}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{new\+\_\+board()}{new\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_board}{Board}}$\ast$ new\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new board and loads initial information. 
+
+\begin{DoxyReturn}{Returns}
+Board$\ast$ -\/ Returns pointer to the \mbox{\hyperlink{struct_board}{Board}} struct created 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga3d4977293a2989f9483b897b1a5bd073_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1}\label{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1}} 
+\index{tetramino@{tetramino}!new\+\_\+tetramino@{new\+\_\+tetramino}}
+\index{new\+\_\+tetramino@{new\+\_\+tetramino}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{new\+\_\+tetramino()}{new\_tetramino()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_tetramino}{Tetramino}}$\ast$ new\+\_\+tetramino (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_board}{Board}} $\ast$}]{board }\end{DoxyParamCaption})}
+
+
+
+Creates a new tetramino and loads initial information of the piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & -\/ Pointer to the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tetramino$\ast$ -\/ Returns a pointer to the \mbox{\hyperlink{struct_tetramino}{Tetramino}} struct created
+\end{DoxyReturn}
+Shape number\+: 1-\/ square shape (red) 2-\/ T shape (light blue) 3-\/ L shape (green) 4-\/ 7 shape inverted (pink) 5-\/ z shape inverted (orange) 6-\/ z shape (blue) 7-\/ $\vert$ shape (yellow) Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga9a2309ca24e8dec1a1bf31a995db2de1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__tetramino_ga2f2a68722efc3ecbd82eea0a337f6b7f}\label{group__tetramino_ga2f2a68722efc3ecbd82eea0a337f6b7f}} 
+\index{tetramino@{tetramino}!update\+\_\+board\+\_\+after\+\_\+line@{update\+\_\+board\+\_\+after\+\_\+line}}
+\index{update\+\_\+board\+\_\+after\+\_\+line@{update\+\_\+board\+\_\+after\+\_\+line}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{update\+\_\+board\+\_\+after\+\_\+line()}{update\_board\_after\_line()}}
+{\footnotesize\ttfamily void update\+\_\+board\+\_\+after\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_board}{Board}} $\ast$}]{bd,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+
+
+Updates the board after a line has been removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bd} & -\/ Pointer to the board \\
+\hline
+{\em position} & -\/ Position of the first square on the eliminated line \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__tetramino_ga2f2a68722efc3ecbd82eea0a337f6b7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{group__tetramino_ga30c121d94ba906148e5a4b0546e723a3}\label{group__tetramino_ga30c121d94ba906148e5a4b0546e723a3}} 
+\index{tetramino@{tetramino}!bd@{bd}}
+\index{bd@{bd}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{bd}{bd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_board}{Board}}$\ast$ bd}
+
+\mbox{\Hypertarget{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}\label{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}} 
+\index{tetramino@{tetramino}!color@{color}}
+\index{color@{color}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{color}{color}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t color}
+
+\mbox{\Hypertarget{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}\label{group__tetramino_ga0b10c5b0fa8e65e009263b93ba2671ae}} 
+\index{tetramino@{tetramino}!color@{color}}
+\index{color@{color}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{color}{color}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t color}
+
+\mbox{\Hypertarget{group__tetramino_ga81c9f8d0b8c3b49d770be14dbe9f0d37}\label{group__tetramino_ga81c9f8d0b8c3b49d770be14dbe9f0d37}} 
+\index{tetramino@{tetramino}!height@{height}}
+\index{height@{height}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily uint16\+\_\+t height}
+
+\mbox{\Hypertarget{group__tetramino_ga4eedd16e00191125d9b7c28eed681ef4}\label{group__tetramino_ga4eedd16e00191125d9b7c28eed681ef4}} 
+\index{tetramino@{tetramino}!positions@{positions}}
+\index{positions@{positions}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{positions}{positions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_square}{Square}} positions\mbox{[}300\mbox{]}}
+
+\mbox{\Hypertarget{group__tetramino_gae4edf8f6630ef7f8b4c587348a3001a7}\label{group__tetramino_gae4edf8f6630ef7f8b4c587348a3001a7}} 
+\index{tetramino@{tetramino}!rot@{rot}}
+\index{rot@{rot}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{rot}{rot}}
+{\footnotesize\ttfamily int rot}
+
+\mbox{\Hypertarget{group__tetramino_ga7aa41fc2efed4bde82530b155c4000f1}\label{group__tetramino_ga7aa41fc2efed4bde82530b155c4000f1}} 
+\index{tetramino@{tetramino}!shape\+\_\+n@{shape\+\_\+n}}
+\index{shape\+\_\+n@{shape\+\_\+n}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{shape\+\_\+n}{shape\_n}}
+{\footnotesize\ttfamily int shape\+\_\+n}
+
+\mbox{\Hypertarget{group__tetramino_ga9d0491d7027bf54689b51ff9e57b3703}\label{group__tetramino_ga9d0491d7027bf54689b51ff9e57b3703}} 
+\index{tetramino@{tetramino}!sqidx@{sqidx}}
+\index{sqidx@{sqidx}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{sqidx}{sqidx}}
+{\footnotesize\ttfamily uint16\+\_\+t sqidx\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{group__tetramino_gad0eab1042455a2067c812ab8071d5376}\label{group__tetramino_gad0eab1042455a2067c812ab8071d5376}} 
+\index{tetramino@{tetramino}!width@{width}}
+\index{width@{width}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily uint16\+\_\+t width}
+
+\mbox{\Hypertarget{group__tetramino_ga4dde988b1b2adba65ae3efa69f65d960}\label{group__tetramino_ga4dde988b1b2adba65ae3efa69f65d960}} 
+\index{tetramino@{tetramino}!x@{x}}
+\index{x@{x}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint16\+\_\+t x}
+
+\mbox{\Hypertarget{group__tetramino_ga92d26140c764e05f62f37639fb87fc88}\label{group__tetramino_ga92d26140c764e05f62f37639fb87fc88}} 
+\index{tetramino@{tetramino}!x\+\_\+gini@{x\+\_\+gini}}
+\index{x\+\_\+gini@{x\+\_\+gini}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{x\+\_\+gini}{x\_gini}}
+{\footnotesize\ttfamily uint16\+\_\+t x\+\_\+gini}
+
+\mbox{\Hypertarget{group__tetramino_gab0580f504a7428539be299fa71565f30}\label{group__tetramino_gab0580f504a7428539be299fa71565f30}} 
+\index{tetramino@{tetramino}!y@{y}}
+\index{y@{y}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint16\+\_\+t y}
+
+\mbox{\Hypertarget{group__tetramino_gafccac8a8a85671bdaf9a927aaefb0b05}\label{group__tetramino_gafccac8a8a85671bdaf9a927aaefb0b05}} 
+\index{tetramino@{tetramino}!y\+\_\+gini@{y\+\_\+gini}}
+\index{y\+\_\+gini@{y\+\_\+gini}!tetramino@{tetramino}}
+\subsubsection{\texorpdfstring{y\+\_\+gini}{y\_gini}}
+{\footnotesize\ttfamily uint16\+\_\+t y\+\_\+gini}
+

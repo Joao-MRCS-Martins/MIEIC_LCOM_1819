@@ -1,0 +1,31 @@
+\hypertarget{timer_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.c File Reference}
+\label{timer_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.\+c}}
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/timer.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__timer_ga6f786481e80308348d629d605ffa2d84}{timer\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes and enables Timer 0 interrupts. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__timer_gab9eea51549744bca5c5c923b388bb4ee}{timer\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes Timer 0 interrupts. \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__timer_ga10fc9c867b15c7da6649311c9987cd17}{timer\+\_\+int\+\_\+handler}} ()
+\begin{DoxyCompactList}\small\item\em Timer 0 interrupt handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{timer_8c_aaff4cc33242426c9f02dd7bc09ea0f07}{\+\_\+int\+\_\+handler}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{timer_8c_aaff4cc33242426c9f02dd7bc09ea0f07}\label{timer_8c_aaff4cc33242426c9f02dd7bc09ea0f07}} 
+\index{timer.\+c@{timer.\+c}!\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}}
+\index{\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}!timer.\+c@{timer.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+int\+\_\+handler}{\_int\_handler}}
+{\footnotesize\ttfamily int \+\_\+int\+\_\+handler = 0}
+

@@ -1,0 +1,32 @@
+\hypertarget{vbe_8h}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vbe.h File Reference}
+\label{vbe_8h}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vbe.\+h@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vbe.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga3a8ea58898cb58fc96013383d39f482c}{B\+IT}}(n)~(0x01$<$$<$(n))
+\item 
+\#define \mbox{\hyperlink{group__vbe_gab32156e1d72cb92b120bb16883c87eea}{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}}~0x4\+F02
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga8197e70eeb80a1f0cc36435458f43baf}{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}}~0x4\+F01
+\item 
+\#define \mbox{\hyperlink{group__vbe_gad2b9e60cf16cf300fb5538fed61a0709}{R\+E\+T\+\_\+\+V\+B\+E\+\_\+\+C\+T\+R\+L\+\_\+\+I\+N\+FO}}~0x4\+F00
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga0ab1b58dbc6c6d4c63156c11f0a4d854}{V\+B\+E\+\_\+\+I\+NT}}~0x10
+\item 
+\#define \mbox{\hyperlink{group__vbe_gac80fb38edf3a38ac5322ff07dcf8d892}{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+F\+A\+I\+L\+ED}}~0x01
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga70496bc11110b7324b61691cb9539c39}{F\+U\+N\+C\+\_\+\+N\+O\+T\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+\+HW}}~0x02
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga850928fe6587cfce16fce2d3aaec01f8}{F\+U\+N\+C\+\_\+\+C\+A\+L\+L\+\_\+\+I\+N\+V\+A\+L\+ID}}~0x03
+\item 
+\#define \mbox{\hyperlink{group__vbe_ga355fae1bcd41c31540b439bcae26ce65}{S\+E\+G\+M\+E\+NT}}(x)~((x $>$$>$ 16) $<$$<$ 4)
+\item 
+\#define \mbox{\hyperlink{group__vbe_gad12dce0a7bf9d908b172a28155b3d261}{O\+F\+F\+S\+ET}}(x)~(x \& 0x\+F\+F\+F\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__vbe_ga3ed45ade635fef064bfe8c181df1a08f}{change\+\_\+vbe\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Changes the video graphic mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__vbe_ga384e6657ec15cb7f19a2d15b0337b72a}{vbe\+\_\+get\+\_\+info\+\_\+mode}} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$vbe\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Retrieves information about the video graphics memory and stores in a given struct. \end{DoxyCompactList}\end{DoxyCompactItemize}

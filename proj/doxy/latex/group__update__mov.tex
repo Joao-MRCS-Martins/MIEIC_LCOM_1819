@@ -1,0 +1,87 @@
+\hypertarget{group__update__mov}{}\section{update\+\_\+mov}
+\label{group__update__mov}\index{update\+\_\+mov@{update\+\_\+mov}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__update__mov_ga2ccd7d6cf601a13f15d3d3f49ba81470}{update\+\_\+movement}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t, bool down, bool left, bool rot)
+\begin{DoxyCompactList}\small\item\em Update tetramino\textquotesingle{}s movement if possible. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__update__mov_ga8721950ab9fce53424e645c9ba3e8e5a}{update\+\_\+rotation}} (\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t, uint16\+\_\+t $\ast$n)
+\begin{DoxyCompactList}\small\item\em Update tetramino\textquotesingle{}s rotation if possible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for update the tetraminos movement 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__update__mov_ga2ccd7d6cf601a13f15d3d3f49ba81470}\label{group__update__mov_ga2ccd7d6cf601a13f15d3d3f49ba81470}} 
+\index{update\+\_\+mov@{update\+\_\+mov}!update\+\_\+movement@{update\+\_\+movement}}
+\index{update\+\_\+movement@{update\+\_\+movement}!update\+\_\+mov@{update\+\_\+mov}}
+\subsubsection{\texorpdfstring{update\+\_\+movement()}{update\_movement()}}
+{\footnotesize\ttfamily bool update\+\_\+movement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$}]{t,  }\item[{bool}]{down,  }\item[{bool}]{left,  }\item[{bool}]{rot }\end{DoxyParamCaption})}
+
+
+
+Update tetramino\textquotesingle{}s movement if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ tetramino to update movement \\
+\hline
+{\em down} & -\/ movement down case true \\
+\hline
+{\em left} & -\/ movement left case true else movement is rigth \\
+\hline
+{\em rot} & -\/ rotation case true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ update movement is succesful 
+
+false -\/ update movement is not possible 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__update__mov_ga2ccd7d6cf601a13f15d3d3f49ba81470_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__update__mov_ga2ccd7d6cf601a13f15d3d3f49ba81470_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__update__mov_ga8721950ab9fce53424e645c9ba3e8e5a}\label{group__update__mov_ga8721950ab9fce53424e645c9ba3e8e5a}} 
+\index{update\+\_\+mov@{update\+\_\+mov}!update\+\_\+rotation@{update\+\_\+rotation}}
+\index{update\+\_\+rotation@{update\+\_\+rotation}!update\+\_\+mov@{update\+\_\+mov}}
+\subsubsection{\texorpdfstring{update\+\_\+rotation()}{update\_rotation()}}
+{\footnotesize\ttfamily bool update\+\_\+rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$}]{t,  }\item[{uint16\+\_\+t $\ast$}]{n }\end{DoxyParamCaption})}
+
+
+
+Update tetramino\textquotesingle{}s rotation if possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & -\/ tetramino to update rotation \\
+\hline
+{\em n} & -\/ array with new positions of tetramino agter rotation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ rotation is succesful 
+
+false -\/ rotation is not possible 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__update__mov_ga8721950ab9fce53424e645c9ba3e8e5a_icgraph}
+\end{center}
+\end{figure}

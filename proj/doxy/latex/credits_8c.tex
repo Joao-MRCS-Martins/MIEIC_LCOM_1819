@@ -1,0 +1,101 @@
+\hypertarget{credits_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/credits.c File Reference}
+\label{credits_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/credits.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/credits.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}credits.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__credits_ga2d90e43cf8b9ee19d3dca31eb1c9cddd}{show\+\_\+image}} ()
+\begin{DoxyCompactList}\small\item\em Presents Credits to user while E\+SC key isn\textquotesingle{}t pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{credits_8c_ab9f863ebaa3805a6e366e055cd35626a}{ipc\+\_\+status}}
+\item 
+message \mbox{\hyperlink{credits_8c_a9a27098ef2c3f4770fd8d4102a089c35}{msg}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{credits_8c_a4c5c6ceb8ed33456261fa907136e0c3a}{r}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{credits_8c_a97412d869ceb53b4677d30395bc57eac}{irq\+\_\+set\+\_\+key}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{credits_8c_a325819a8e492ac69542e8b31705af6e9}{data}}
+\item 
+int \mbox{\hyperlink{credits_8c_a581d7c6b8c128e2d037cce52bdc168cf}{ih\+\_\+bool}}
+\item 
+int \mbox{\hyperlink{credits_8c_aaff4cc33242426c9f02dd7bc09ea0f07}{\+\_\+int\+\_\+handler}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{credits_8c_a2f85476a22fd71cb54fee61ca96060f4}{sc\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{credits_8c_a439227feff9d7f55384e8780cfc2eb82}{size}}
+\item 
+bool \mbox{\hyperlink{credits_8c_ad4fc2d544f41a6c2751efb12dd908213}{make}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{credits_8c_aaff4cc33242426c9f02dd7bc09ea0f07}\label{credits_8c_aaff4cc33242426c9f02dd7bc09ea0f07}} 
+\index{credits.\+c@{credits.\+c}!\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}}
+\index{\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+int\+\_\+handler}{\_int\_handler}}
+{\footnotesize\ttfamily int \+\_\+int\+\_\+handler}
+
+\mbox{\Hypertarget{credits_8c_a325819a8e492ac69542e8b31705af6e9}\label{credits_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{credits.\+c@{credits.\+c}!data@{data}}
+\index{data@{data}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+\mbox{\Hypertarget{credits_8c_a581d7c6b8c128e2d037cce52bdc168cf}\label{credits_8c_a581d7c6b8c128e2d037cce52bdc168cf}} 
+\index{credits.\+c@{credits.\+c}!ih\+\_\+bool@{ih\+\_\+bool}}
+\index{ih\+\_\+bool@{ih\+\_\+bool}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{ih\+\_\+bool}{ih\_bool}}
+{\footnotesize\ttfamily int ih\+\_\+bool}
+
+\mbox{\Hypertarget{credits_8c_ab9f863ebaa3805a6e366e055cd35626a}\label{credits_8c_ab9f863ebaa3805a6e366e055cd35626a}} 
+\index{credits.\+c@{credits.\+c}!ipc\+\_\+status@{ipc\+\_\+status}}
+\index{ipc\+\_\+status@{ipc\+\_\+status}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{ipc\+\_\+status}{ipc\_status}}
+{\footnotesize\ttfamily int ipc\+\_\+status}
+
+\mbox{\Hypertarget{credits_8c_a97412d869ceb53b4677d30395bc57eac}\label{credits_8c_a97412d869ceb53b4677d30395bc57eac}} 
+\index{credits.\+c@{credits.\+c}!irq\+\_\+set\+\_\+key@{irq\+\_\+set\+\_\+key}}
+\index{irq\+\_\+set\+\_\+key@{irq\+\_\+set\+\_\+key}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+key}{irq\_set\_key}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+key}
+
+\mbox{\Hypertarget{credits_8c_ad4fc2d544f41a6c2751efb12dd908213}\label{credits_8c_ad4fc2d544f41a6c2751efb12dd908213}} 
+\index{credits.\+c@{credits.\+c}!make@{make}}
+\index{make@{make}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{make}{make}}
+{\footnotesize\ttfamily bool make}
+
+\mbox{\Hypertarget{credits_8c_a9a27098ef2c3f4770fd8d4102a089c35}\label{credits_8c_a9a27098ef2c3f4770fd8d4102a089c35}} 
+\index{credits.\+c@{credits.\+c}!msg@{msg}}
+\index{msg@{msg}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily message msg}
+
+\mbox{\Hypertarget{credits_8c_a4c5c6ceb8ed33456261fa907136e0c3a}\label{credits_8c_a4c5c6ceb8ed33456261fa907136e0c3a}} 
+\index{credits.\+c@{credits.\+c}!r@{r}}
+\index{r@{r}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily uint8\+\_\+t r}
+
+\mbox{\Hypertarget{credits_8c_a2f85476a22fd71cb54fee61ca96060f4}\label{credits_8c_a2f85476a22fd71cb54fee61ca96060f4}} 
+\index{credits.\+c@{credits.\+c}!sc\+\_\+code@{sc\+\_\+code}}
+\index{sc\+\_\+code@{sc\+\_\+code}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{sc\+\_\+code}{sc\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t sc\+\_\+code\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{credits_8c_a439227feff9d7f55384e8780cfc2eb82}\label{credits_8c_a439227feff9d7f55384e8780cfc2eb82}} 
+\index{credits.\+c@{credits.\+c}!size@{size}}
+\index{size@{size}!credits.\+c@{credits.\+c}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int size}
+

@@ -1,0 +1,53 @@
+\hypertarget{rtc_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/rtc.c File Reference}
+\label{rtc_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/rtc.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/rtc.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__rtc_ga7c28e3528db0f743706f9c01608331a7}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bitno)
+\begin{DoxyCompactList}\small\item\em Subscribes R\+TC interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gaf6f18245f611a9c8f64055feae5ec73d}{rtc\+\_\+read\+\_\+register}} (uint32\+\_\+t addr, uint32\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}})
+\begin{DoxyCompactList}\small\item\em Reads R\+TC address passed in the arguments and stores it. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga9b5d85527d676067a8c05780ec46d4f1}{rtc\+\_\+write\+\_\+register}} (uint32\+\_\+t addr, uint32\+\_\+t \mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}})
+\begin{DoxyCompactList}\small\item\em Writes to the R\+TC address passed in the arguments. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga33036209deeaa3ca32027fdab0c8b2d7}{rtc\+\_\+enable\+\_\+update\+\_\+ints}} ()
+\begin{DoxyCompactList}\small\item\em Enables update-\/ended interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga6222d2da81f961f574c428db117e610e}{rtc\+\_\+disable\+\_\+update\+\_\+ints}} ()
+\begin{DoxyCompactList}\small\item\em Disables update-\/ended interruptions. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga3d9330b99a772073f924e69bc1b2df05}{rtc\+\_\+read\+\_\+seconds}} ()
+\begin{DoxyCompactList}\small\item\em Reads seconds from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gaac43b2266aa06ad5a572d0fa3976ebb0}{rtc\+\_\+read\+\_\+minutes}} ()
+\begin{DoxyCompactList}\small\item\em Reads minutes from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga512adcbde067ca5bb83b1af0e0a7a444}{rtc\+\_\+read\+\_\+hours}} ()
+\begin{DoxyCompactList}\small\item\em Reads hour from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga2e585f34d69246a60a1db0e94ca09c05}{rtc\+\_\+read\+\_\+day\+\_\+week}} ()
+\begin{DoxyCompactList}\small\item\em Reads day of the week from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga59359f9460af7b7dce7a2c8dc9d98211}{rtc\+\_\+read\+\_\+day\+\_\+month}} ()
+\begin{DoxyCompactList}\small\item\em Reads day of the month from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gabd90445bf474121fa89636a17f4c7369}{rtc\+\_\+read\+\_\+month}} ()
+\begin{DoxyCompactList}\small\item\em Reads month from the appropriate register. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_ga4ddd82a19df760d95b2dd0c92ec6c63b}{rtc\+\_\+read\+\_\+year}} ()
+\begin{DoxyCompactList}\small\item\em Reads year from the appropriate register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__rtc_ga75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em R\+TC interrupt handler, reads register C to verify what is the source of the interruptions and handles the information accordingly. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{group__rtc_ga1f2c4f317d879fe00426ee4317bc625f}{get\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_date}{Date}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_ga1c7900b102529826ac1662355e6cf058}{rtc\+\_\+update\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{struct_date}{Date}} object with new information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{rtc_8c_a96f78a87d064e47d627d222f67a8d012}{hook\+\_\+id}} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_a96f78a87d064e47d627d222f67a8d012}\label{rtc_8c_a96f78a87d064e47d627d222f67a8d012}} 
+\index{rtc.\+c@{rtc.\+c}!hook\+\_\+id@{hook\+\_\+id}}
+\index{hook\+\_\+id@{hook\+\_\+id}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{hook\+\_\+id}{hook\_id}}
+{\footnotesize\ttfamily int hook\+\_\+id = 8}
+

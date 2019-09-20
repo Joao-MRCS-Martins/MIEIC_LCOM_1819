@@ -1,0 +1,58 @@
+\hypertarget{main__menu_8h}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.h File Reference}
+\label{main__menu_8h}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.\+h@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.\+h}}
+{\ttfamily \#include \char`\"{}bitmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}videog.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tetromino.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_background}{Background}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga44dd1b46a3f55007e78fc1ac506153b9}{M\+A\+I\+N\+\_\+\+M\+E\+NU}}~0
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga81dbe4cce536eb83872b539079ba4139}{G\+A\+ME}}~1
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga28017dea6f5becdb38eba6eac6f51bbc}{C\+R\+E\+D\+I\+TS}}~2
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gad111e603bbebe5d87f6bc39264ce4733}{E\+X\+IT}}~3
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga601a4ab83713dad6008bf74c4c347914}{P\+L\+A\+Y\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gab3b9dbde965b2ad8e2b7720c26eded37}{P\+L\+A\+Y\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga9e84b26e342c1df4348efbfa6694bccd}{P\+L\+A\+Y\+\_\+Y}}~250
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga265d0b9390156ec1520c0f68c3431c6c}{P\+L\+A\+Y\+\_\+\+H\+E\+I\+G\+HT}}~45
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gaeb9fff4c05c42ce4f00cbfe3622b63d0}{C\+R\+E\+D\+I\+T\+S\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gac8aca0d07f517982d67af5081ed2b4f4}{C\+R\+E\+D\+I\+T\+S\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga2e441d1c4e7d198f1f0d0eb60d331d86}{C\+R\+E\+D\+I\+T\+S\+\_\+Y}}~300
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gac970a6c034ab2b622434972ef2205935}{C\+R\+E\+D\+I\+T\+S\+\_\+\+H\+E\+I\+G\+HT}}~55
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga3040de9a6158b6f62ae7a78d32deffb9}{Q\+U\+I\+T\+\_\+X}}~330
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga8e5034a101e70e1f511a56f70f32ad37}{Q\+U\+I\+T\+\_\+\+W\+I\+D\+TH}}~150
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gae60f4142599ff024b4d8d2ca3ebe42e7}{Q\+U\+I\+T\+\_\+Y}}~380
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga3f826023eb74f14d5f48cd11d5385e0a}{Q\+U\+I\+T\+\_\+\+H\+E\+I\+G\+HT}}~45
+\item 
+\#define \mbox{\hyperlink{group__main__menu_ga5de99031704f5a4356e8fb30d56c4986}{C\+U\+R\+S\+O\+R\+\_\+\+S\+P\+E\+ED}}~1.\+2
+\item 
+\#define \mbox{\hyperlink{group__main__menu_gae541f04deda5a9c9683f7f3866175023}{C\+U\+R\+S\+O\+R\+\_\+\+S\+I\+ZE}}~20
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__main__menu_gae70e892130949697cbf1d294be0adf55}{handling\+\_\+interruptions}} (struct packet $\ast$pp1, uint8\+\_\+t irq\+\_\+set\+\_\+mouse)
+\begin{DoxyCompactList}\small\item\em Handles mouse interruptions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__main__menu_ga583b8136014872071b0373049b6fde3c}{draw\+\_\+pointer}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw mouse pointer on screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68}{detect\+\_\+options\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Tracks the mouse related events, presenting to the user the main menu of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{game_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.c File Reference}
+\label{game_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.\+c}}
+{\ttfamily \#include \char`\"{}lcom/lcf.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/pixmap.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}update\+\_\+mov.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{game_8c_acc1807ff5cfc5a22eba094a13ed6089e}{concat}} (const char $\ast$s1, const char $\ast$s2)
+\item 
+void \mbox{\hyperlink{group__game_gaf426df873300d051272115729c8fa5a1}{write\+\_\+lvL}} (int level, \mbox{\hyperlink{structldig}{ldig}} $\ast$ld)
+\begin{DoxyCompactList}\small\item\em Writes the level on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga4447b1a565fed3c6130bf9e38970b933}{write\+\_\+score}} (int pont, \mbox{\hyperlink{structpnt}{pnt}} $\ast$u, int x, int y)
+\begin{DoxyCompactList}\small\item\em Writes the score on the screen and in the game end. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga75e50926d07db9cfd2bad44c163f2bdd}{draw\+\_\+date\+\_\+str}} (\mbox{\hyperlink{struct_date}{Date}} date, \mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$di)
+\begin{DoxyCompactList}\small\item\em Writes the date on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga11d44633d3eb30282274511c8a8d7511}{paint\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Draws on the screen the exteriors of the game\+: title, borders,score and level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_ga553ba6d099151083884ae0d6c1e76771}{game\+\_\+movement\+\_\+options}} (uint32\+\_\+t \mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, int $\ast$make\+\_\+nbr, \mbox{\hyperlink{struct_tetramino}{Tetramino}} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Receives keyboard information and handles the event of the game accordingly. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{group__game_ga221b757ab658deb87f4ccd865d29a9ff}{driver\+\_\+\+Receive}} (endpoint\+\_\+t any, message $\ast$m, int $\ast$\mbox{\hyperlink{game_8c_ab9f863ebaa3805a6e366e055cd35626a}{ipc\+\_\+status}})
+\begin{DoxyCompactList}\small\item\em Wrapper function for driver\+\_\+receive. Used only for function call graph. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__game_gaa449f1959d3595ac0d0b88d643b1acd4}{game\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Main function of the game, handles the flow of the game and presents the info to the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__game_gac6c44260c9d002d8a21c4bfd44b2fd88}{delete\+\_\+info}} (\mbox{\hyperlink{structpnt}{pnt}} $\ast$u, \mbox{\hyperlink{structldig}{ldig}} $\ast$ld, \mbox{\hyperlink{struct_date__image}{Date\+\_\+image}} $\ast$dimag)
+\begin{DoxyCompactList}\small\item\em Deletes the allocated memory, allowing to free memory space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_ab9f863ebaa3805a6e366e055cd35626a}{ipc\+\_\+status}} = 0
+\item 
+message \mbox{\hyperlink{game_8c_a9a27098ef2c3f4770fd8d4102a089c35}{msg}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a4c5c6ceb8ed33456261fa907136e0c3a}{r}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a2689ae0fca38ea3503bba4d3836f3c05}{irq\+\_\+set\+\_\+tim}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a97412d869ceb53b4677d30395bc57eac}{irq\+\_\+set\+\_\+key}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a0f7ecc47ac40b06d401be059c9ce5711}{irq\+\_\+set\+\_\+rtc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a325819a8e492ac69542e8b31705af6e9}{data}}
+\item 
+int \mbox{\hyperlink{game_8c_a581d7c6b8c128e2d037cce52bdc168cf}{ih\+\_\+bool}}
+\item 
+int \mbox{\hyperlink{game_8c_aaff4cc33242426c9f02dd7bc09ea0f07}{\+\_\+int\+\_\+handler}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{game_8c_a2f85476a22fd71cb54fee61ca96060f4}{sc\+\_\+code}} \mbox{[}2\mbox{]}
+\item 
+int \mbox{\hyperlink{game_8c_a439227feff9d7f55384e8780cfc2eb82}{size}}
+\item 
+bool \mbox{\hyperlink{game_8c_ad4fc2d544f41a6c2751efb12dd908213}{make}}
+\item 
+int \mbox{\hyperlink{game_8c_aef160b7437d94056f1dc59646cd5b87d}{score}} = 0
+\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{game_8c_a85641069b0d4478ab8a7356c3bf32ea3}{d}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_acc1807ff5cfc5a22eba094a13ed6089e}\label{game_8c_acc1807ff5cfc5a22eba094a13ed6089e}} 
+\index{game.\+c@{game.\+c}!concat@{concat}}
+\index{concat@{concat}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily char$\ast$ concat (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s1,  }\item[{const char $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_acc1807ff5cfc5a22eba094a13ed6089e_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_aaff4cc33242426c9f02dd7bc09ea0f07}\label{game_8c_aaff4cc33242426c9f02dd7bc09ea0f07}} 
+\index{game.\+c@{game.\+c}!\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}}
+\index{\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+int\+\_\+handler}{\_int\_handler}}
+{\footnotesize\ttfamily int \+\_\+int\+\_\+handler}
+
+\mbox{\Hypertarget{game_8c_a85641069b0d4478ab8a7356c3bf32ea3}\label{game_8c_a85641069b0d4478ab8a7356c3bf32ea3}} 
+\index{game.\+c@{game.\+c}!d@{d}}
+\index{d@{d}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_date}{Date}} d}
+
+\mbox{\Hypertarget{game_8c_a325819a8e492ac69542e8b31705af6e9}\label{game_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{game.\+c@{game.\+c}!data@{data}}
+\index{data@{data}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+\mbox{\Hypertarget{game_8c_a581d7c6b8c128e2d037cce52bdc168cf}\label{game_8c_a581d7c6b8c128e2d037cce52bdc168cf}} 
+\index{game.\+c@{game.\+c}!ih\+\_\+bool@{ih\+\_\+bool}}
+\index{ih\+\_\+bool@{ih\+\_\+bool}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{ih\+\_\+bool}{ih\_bool}}
+{\footnotesize\ttfamily int ih\+\_\+bool}
+
+\mbox{\Hypertarget{game_8c_ab9f863ebaa3805a6e366e055cd35626a}\label{game_8c_ab9f863ebaa3805a6e366e055cd35626a}} 
+\index{game.\+c@{game.\+c}!ipc\+\_\+status@{ipc\+\_\+status}}
+\index{ipc\+\_\+status@{ipc\+\_\+status}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{ipc\+\_\+status}{ipc\_status}}
+{\footnotesize\ttfamily int ipc\+\_\+status = 0}
+
+\mbox{\Hypertarget{game_8c_a97412d869ceb53b4677d30395bc57eac}\label{game_8c_a97412d869ceb53b4677d30395bc57eac}} 
+\index{game.\+c@{game.\+c}!irq\+\_\+set\+\_\+key@{irq\+\_\+set\+\_\+key}}
+\index{irq\+\_\+set\+\_\+key@{irq\+\_\+set\+\_\+key}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+key}{irq\_set\_key}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+key}
+
+\mbox{\Hypertarget{game_8c_a0f7ecc47ac40b06d401be059c9ce5711}\label{game_8c_a0f7ecc47ac40b06d401be059c9ce5711}} 
+\index{game.\+c@{game.\+c}!irq\+\_\+set\+\_\+rtc@{irq\+\_\+set\+\_\+rtc}}
+\index{irq\+\_\+set\+\_\+rtc@{irq\+\_\+set\+\_\+rtc}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+rtc}{irq\_set\_rtc}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+rtc}
+
+\mbox{\Hypertarget{game_8c_a2689ae0fca38ea3503bba4d3836f3c05}\label{game_8c_a2689ae0fca38ea3503bba4d3836f3c05}} 
+\index{game.\+c@{game.\+c}!irq\+\_\+set\+\_\+tim@{irq\+\_\+set\+\_\+tim}}
+\index{irq\+\_\+set\+\_\+tim@{irq\+\_\+set\+\_\+tim}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{irq\+\_\+set\+\_\+tim}{irq\_set\_tim}}
+{\footnotesize\ttfamily uint8\+\_\+t irq\+\_\+set\+\_\+tim}
+
+\mbox{\Hypertarget{game_8c_ad4fc2d544f41a6c2751efb12dd908213}\label{game_8c_ad4fc2d544f41a6c2751efb12dd908213}} 
+\index{game.\+c@{game.\+c}!make@{make}}
+\index{make@{make}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{make}{make}}
+{\footnotesize\ttfamily bool make}
+
+\mbox{\Hypertarget{game_8c_a9a27098ef2c3f4770fd8d4102a089c35}\label{game_8c_a9a27098ef2c3f4770fd8d4102a089c35}} 
+\index{game.\+c@{game.\+c}!msg@{msg}}
+\index{msg@{msg}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily message msg}
+
+\mbox{\Hypertarget{game_8c_a4c5c6ceb8ed33456261fa907136e0c3a}\label{game_8c_a4c5c6ceb8ed33456261fa907136e0c3a}} 
+\index{game.\+c@{game.\+c}!r@{r}}
+\index{r@{r}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily uint8\+\_\+t r}
+
+\mbox{\Hypertarget{game_8c_a2f85476a22fd71cb54fee61ca96060f4}\label{game_8c_a2f85476a22fd71cb54fee61ca96060f4}} 
+\index{game.\+c@{game.\+c}!sc\+\_\+code@{sc\+\_\+code}}
+\index{sc\+\_\+code@{sc\+\_\+code}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{sc\+\_\+code}{sc\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t sc\+\_\+code\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{game_8c_aef160b7437d94056f1dc59646cd5b87d}\label{game_8c_aef160b7437d94056f1dc59646cd5b87d}} 
+\index{game.\+c@{game.\+c}!score@{score}}
+\index{score@{score}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int score = 0}
+
+\mbox{\Hypertarget{game_8c_a439227feff9d7f55384e8780cfc2eb82}\label{game_8c_a439227feff9d7f55384e8780cfc2eb82}} 
+\index{game.\+c@{game.\+c}!size@{size}}
+\index{size@{size}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily int size}
+

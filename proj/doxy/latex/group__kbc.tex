@@ -1,0 +1,115 @@
+\hypertarget{group__kbc}{}\section{kbc}
+\label{group__kbc}\index{kbc@{kbc}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__kbc_gaefb2d8ab6a450744c686e348063ebc32}{sys\+\_\+inb\+\_\+cnt}}(p,  q)~sys\+\_\+inb(p,q)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__kbc_ga77e47edd0806a3ac022baa8431f1f8b8}{read\+\_\+kbc}} (uint32\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, int port)
+\begin{DoxyCompactList}\small\item\em Tries to read information from the kbc status register. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__kbc_ga51a87bc28290c19518e8bbd5423f508a}{read\+\_\+information}} (uint8\+\_\+t $\ast$\mbox{\hyperlink{mouse_8c_a325819a8e492ac69542e8b31705af6e9}{data}}, uint8\+\_\+t I\+RQ)
+\begin{DoxyCompactList}\small\item\em Reads information of the kbc, whether its the scancode from the keyboard or a packet from the mouse. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__kbc_ga547e83b3378cd67366e45d3c9565374a}{kbc\+\_\+issue\+\_\+command}} (uint32\+\_\+t cmd, int port)
+\begin{DoxyCompactList}\small\item\em Issues a command to the kbc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for using the i8042 kbc 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__kbc_gaefb2d8ab6a450744c686e348063ebc32}\label{group__kbc_gaefb2d8ab6a450744c686e348063ebc32}} 
+\index{kbc@{kbc}!sys\+\_\+inb\+\_\+cnt@{sys\+\_\+inb\+\_\+cnt}}
+\index{sys\+\_\+inb\+\_\+cnt@{sys\+\_\+inb\+\_\+cnt}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{sys\+\_\+inb\+\_\+cnt}{sys\_inb\_cnt}}
+{\footnotesize\ttfamily \#define sys\+\_\+inb\+\_\+cnt(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{q }\end{DoxyParamCaption})~sys\+\_\+inb(p,q)}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__kbc_ga547e83b3378cd67366e45d3c9565374a}\label{group__kbc_ga547e83b3378cd67366e45d3c9565374a}} 
+\index{kbc@{kbc}!kbc\+\_\+issue\+\_\+command@{kbc\+\_\+issue\+\_\+command}}
+\index{kbc\+\_\+issue\+\_\+command@{kbc\+\_\+issue\+\_\+command}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+issue\+\_\+command()}{kbc\_issue\_command()}}
+{\footnotesize\ttfamily int kbc\+\_\+issue\+\_\+command (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{cmd,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Issues a command to the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & -\/ the command to be issued \\
+\hline
+{\em port} & -\/ the port of the kbc to send the command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Returns 0 if successful, returns 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga547e83b3378cd67366e45d3c9565374a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga51a87bc28290c19518e8bbd5423f508a}\label{group__kbc_ga51a87bc28290c19518e8bbd5423f508a}} 
+\index{kbc@{kbc}!read\+\_\+information@{read\+\_\+information}}
+\index{read\+\_\+information@{read\+\_\+information}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{read\+\_\+information()}{read\_information()}}
+{\footnotesize\ttfamily int read\+\_\+information (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint8\+\_\+t}]{I\+RQ }\end{DoxyParamCaption})}
+
+
+
+Reads information of the kbc, whether its the scancode from the keyboard or a packet from the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ Pointer to the location where data is stored \\
+\hline
+{\em I\+RQ} & -\/ I\+RQ line to identify which periphal needs reading \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Returns 0 if successful, returns 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga51a87bc28290c19518e8bbd5423f508a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga77e47edd0806a3ac022baa8431f1f8b8}\label{group__kbc_ga77e47edd0806a3ac022baa8431f1f8b8}} 
+\index{kbc@{kbc}!read\+\_\+kbc@{read\+\_\+kbc}}
+\index{read\+\_\+kbc@{read\+\_\+kbc}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{read\+\_\+kbc()}{read\_kbc()}}
+{\footnotesize\ttfamily int read\+\_\+kbc (\begin{DoxyParamCaption}\item[{uint32\+\_\+t $\ast$}]{data,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Tries to read information from the kbc status register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ Pointer to the location where the data will be stored \\
+\hline
+{\em port} & -\/ The kbc port to be accessed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ Returns 0 if successful, returns 1 otherwise 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga77e47edd0806a3ac022baa8431f1f8b8_icgraph}
+\end{center}
+\end{figure}

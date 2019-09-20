@@ -1,0 +1,49 @@
+\hypertarget{main__menu_8c}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.c File Reference}
+\label{main__menu_8c}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.\+c@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/main\+\_\+menu.\+c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$minix/drivers.\+h$>$}\newline
+{\ttfamily \#include $<$minix/syslib.\+h$>$}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main\+\_\+menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__main__menu_gae70e892130949697cbf1d294be0adf55}{handling\+\_\+interruptions}} (struct packet $\ast$pp, uint8\+\_\+t irq\+\_\+set\+\_\+mouse)
+\begin{DoxyCompactList}\small\item\em Handles mouse interruptions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__main__menu_ga583b8136014872071b0373049b6fde3c}{draw\+\_\+pointer}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draw mouse pointer on screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__main__menu_gadf0b351e14ba0cb60a8d69e8b4423e68}{detect\+\_\+options\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Tracks the mouse related events, presenting to the user the main menu of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main__menu_8c_aaff4cc33242426c9f02dd7bc09ea0f07}{\+\_\+int\+\_\+handler}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{main__menu_8c_a325819a8e492ac69542e8b31705af6e9}{data}}
+\item 
+int \mbox{\hyperlink{main__menu_8c_a89f234133d3efe315836311cbf21c64b}{state}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main__menu_8c_aaff4cc33242426c9f02dd7bc09ea0f07}\label{main__menu_8c_aaff4cc33242426c9f02dd7bc09ea0f07}} 
+\index{main\+\_\+menu.\+c@{main\+\_\+menu.\+c}!\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}}
+\index{\+\_\+int\+\_\+handler@{\+\_\+int\+\_\+handler}!main\+\_\+menu.\+c@{main\+\_\+menu.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+int\+\_\+handler}{\_int\_handler}}
+{\footnotesize\ttfamily int \+\_\+int\+\_\+handler}
+
+\mbox{\Hypertarget{main__menu_8c_a325819a8e492ac69542e8b31705af6e9}\label{main__menu_8c_a325819a8e492ac69542e8b31705af6e9}} 
+\index{main\+\_\+menu.\+c@{main\+\_\+menu.\+c}!data@{data}}
+\index{data@{data}!main\+\_\+menu.\+c@{main\+\_\+menu.\+c}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t data}
+
+\mbox{\Hypertarget{main__menu_8c_a89f234133d3efe315836311cbf21c64b}\label{main__menu_8c_a89f234133d3efe315836311cbf21c64b}} 
+\index{main\+\_\+menu.\+c@{main\+\_\+menu.\+c}!state@{state}}
+\index{state@{state}!main\+\_\+menu.\+c@{main\+\_\+menu.\+c}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily int state}
+

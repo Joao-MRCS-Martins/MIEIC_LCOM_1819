@@ -1,0 +1,17 @@
+\hypertarget{keyboard_8h}{}\section{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.h File Reference}
+\label{keyboard_8h}\index{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.\+h@{C\+:/\+Users/joaom/\+Desktop/\+F\+E\+U\+P/2º ano/\+L\+C\+O\+M/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/keyboard.\+h}}
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__keyboard_gaa8e63a9750dae94729779940343f0150}{keyb\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe keyboard interruptions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__keyboard_gac95aea27a5e91b363b876fed881f368f}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe keyboard interruptions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__keyboard_gab9e6ed7960d60aa4834f2038247d4536}{kbc\+\_\+ih}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Keyboard interrupt handler\+: collects information from keyboard 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
