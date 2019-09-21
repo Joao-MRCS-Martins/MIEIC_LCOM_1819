@@ -1,4 +1,4 @@
-# MIEIC_LCOM_1819
+# MIEIC_LCOM_2018
 Repository for LCOM (Computer Labs) lab and project files.
 
-Made with the help of [@anamargaridarl](https://github.com/anamargaridarl).
+Made in colaboration with [@anamargaridarl](https://github.com/anamargaridarl).
